@@ -1,0 +1,123 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+body {
+  font-family: 'Forum';
+}
+header {
+  max-width: 1360.56px;
+  max-height: 970px;
+  padding: 0;
+  background-image: url(./img/header-photo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-logo {
+  margin-top: 80px;
+  margin-left: 600px;
+  align-items: center;
+  width: 349px;
+  height: 70.48px;
+}
+
+.date {
+  margin-top: 130px;
+  margin-left: 1000px;
+  padding: 12px 80px 12px;
+  border: solid 0.5px;
+  border-color: #285365;
+  border-radius: 30px;
+
+  font-family: 'Forum';
+  font-size: 20px;
+  color: #285365;
+}
+.logo-text {
+  margin-top: 30px;
+  margin-left: 700px;
+}
+.header-text {
+  margin-top: 40px;
+  margin-left: 680px;
+  font-family: 'Forum';
+  font-size: 20px;
+  line-height: 25px;
+  color: #477a8d;
+}
+.btn {
+  margin-top: 40px;
+  margin-left: 680px;
+  margin-bottom: 170px;
+  padding: 12px 80px 12px;
+  border: solid 0.5px;
+  border-color: #477a8d;
+  background-color: #477a8d;
+  border-radius: 30px;
+
+  font-family: 'Forum';
+  font-size: 25px;
+  width: 200;
+  color: white;
+}
+
+.article {
+  max-width: 1570px;
+  max-height: 600px;
+  background: #477a8d;
+  background: linear-gradient(85deg, #114b66, #477a8d);
+}
+.article-title {
+  position: relative;
+  padding-top: 40px;
+  margin-left: 310px;
+
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1opx;
+  color: #efeeea;
+}
+.article-text {
+  position: relative;
+
+  padding-top: 30px;
+  margin-left: 310px;
+  font-size: 18px;
+  color: #efeeea;
+}
+
+.text {
+  position: relative;
+  padding-bottom: 90px;
+}
+
+.article-img {
+  position: absolute;
+  margin-left: 900px;
+  margin-top: -450px;
+  width: 400px;
+  height: 380px;
+}
+
+figure {
+  position: absolute;
+  margin-left: 970px;
+  margin-top: -390px;
+}
+
+.course-audience {
+  max-width: 1570px;
+  max-height: 856px;
+  background: #184d5f;
+}
+.course-audience-title {
+  margin-top: 20px;
+}
+.list {
+}
+.audience-list {
+}
+.audience-list-item {
+}
+.audience-text {
+}

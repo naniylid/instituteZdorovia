@@ -3,9 +3,9 @@
 
 body {
   font-family: 'Forum';
+  max-width: 1550.56px;
 }
 header {
-  max-width: 1360.56px;
   max-height: 970px;
   padding: 0;
   background-image: url(./img/header-photo.png);
@@ -25,6 +25,7 @@ header {
   margin-top: 130px;
   margin-left: 1000px;
   padding: 12px 80px 12px;
+  width: max-content;
   border: solid 0.5px;
   border-color: #285365;
   border-radius: 30px;
@@ -61,8 +62,11 @@ header {
   color: white;
 }
 
+.btn :hover {
+  opacity: 0.5;
+}
+
 .article {
-  max-width: 1570px;
   max-height: 600px;
   background: #477a8d;
   background: linear-gradient(85deg, #114b66, #477a8d);
@@ -101,8 +105,69 @@ header {
 
 figure {
   position: absolute;
-  margin-left: 970px;
-  margin-top: -390px;
+  margin-left: 960px;
+  margin-top: -400px;
+}
+
+.article-text-first {
+  height: 230px;
+}
+.first-item {
+  margin-top: 80px;
+  margin-left: 310px;
+  font-size: 20px;
+  color: #477a8d;
+}
+.article-text-second {
+  height: 350px;
+  background-color: #477a8d;
+}
+.second-text-title {
+  padding-top: 35px;
+  margin-left: 310px;
+  font-size: 45px;
+  color: #ffff;
+}
+.second-item {
+  padding-top: 50px;
+  margin-left: 310px;
+  font-size: 23px;
+  color: #ffff;
+}
+.course-info {
+  height: max-content;
+  margin-left: 310px;
+  height: 700px;
+}
+.course-info-title {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-size: 45px;
+  color: #285365;
+}
+
+.info-list {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 20px;
+}
+.course-info-list-item {
+  width: 230px;
+  height: 230px;
+  border-radius: 20px;
+  background-color: #f3f5f7;
+  align-items: center;
+
+  font-size: 20px;
+  color: #285365;
+}
+
+.course-info-list-item p,
+img {
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
 .course-audience {
@@ -120,23 +185,22 @@ figure {
   padding-top: 50px;
   padding-left: 350px;
 }
-
 .audience-list-item {
-  list-style-position: outside 50%;
-
-  list-style-image: url(./img/Star\ 1.png);
-
   width: 500px;
   margin-top: 20px;
-  padding: 2px 10px 20px 30px;
+  padding: 20px 10px 20px 30px;
   border: solid 0.5px;
   border-color: #477a8d;
   background-color: #eaf5f9;
   border-radius: 40px;
-  box-shadow: 5px 5px 5px black;
 
   font-size: 18px;
-  color: 184D5F;
+  color: #184d5f;
+}
+.list-icon {
+  position: absolute;
+  margin-top: -31px;
+  margin-left: -120px;
 }
 .audience-picture {
   position: absolute;
@@ -156,7 +220,6 @@ figure {
   border-color: #477a8d;
   background-color: #77b2c8;
   border-radius: 40px;
-  box-shadow: 5px 5px 5px black;
-
+  font-size: 20px;
   color: white;
 }

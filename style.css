@@ -344,7 +344,6 @@ img {
   background-image: url(img/waves.png);
   background-repeat: no-repeat;
   height: 1108px;
-
   margin-top: 120px;
 }
 .space-block {
@@ -376,4 +375,50 @@ img {
 
 .space-btn {
   margin-left: 60px;
+}
+
+/* Что вы сможете после курса */
+.course-possibilities {
+  margin-top: 90px;
+  height: 1050px;
+  background: linear-gradient(85deg, #114b66, var(--main-color));
+}
+.course-possibilities-title {
+  padding: 80px 0 30px 300px;
+  font-size: 50px;
+  color: white;
+}
+.possibilities-list {
+  padding: 40px 0 0 250px;
+  font-size: 23px;
+  width: 900px;
+  color: white;
+}
+
+.number-list {
+  position: absolute;
+  margin-top: -35px;
+  margin-left: -95px;
+}
+
+/* Лицензии */
+.documents-block {
+  height: 1500px;
+}
+.documents-block-title {
+  margin-top: 70px;
+  margin-left: 250px;
+  font-size: 50px;
+  color: var(--dark-color);
+}
+.document-text {
+  margin-left: 210px;
+  width: 800px;
+  font-size: 23px;
+  color: var(--main-color);
+  line-height: 25px;
+}
+
+.document-text p {
+  padding-top: 30px;
 }

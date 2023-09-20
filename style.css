@@ -403,7 +403,7 @@ img {
 
 /* Лицензии */
 .documents-block {
-  height: 1500px;
+  height: 1300px;
 }
 .documents-block-title {
   margin-top: 70px;
@@ -421,4 +421,145 @@ img {
 
 .document-text p {
   padding-top: 30px;
+}
+
+/* Slider */
+.slider {
+  margin-top: 30px;
+  margin-left: 250px;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 1s;
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+/* price block */
+.price-block {
+  background-color: var(--main-color);
+}
+.price-block-title {
+  padding: 50px 0 0 230px;
+  font-size: 50px;
+  color: white;
+}
+.price-title {
+  margin-left: 230px;
+}
+.price-block_1 {
+  border: 1px solid white;
+  width: 300px;
+  height: 530px;
+  border-radius: 35px;
+  margin-left: 220px;
+  margin-top: 40px;
+}
+
+.first-block {
+  border: 1px solid white;
+  background-color: white;
+  height: 360px;
+  width: 270px;
+  border-radius: 35px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.block-list {
+  list-style-type: disc;
+  margin: 25px 0 0 40px;
+  font-size: 20px;
+  color: var(--dark-color);
+}
+
+.present-block {
+  margin-top: 12px;
+  margin-left: 15px;
+  border: 1px solid white;
+  background-color: white;
+  height: 130px;
+  width: 270px;
+  border-radius: 35px;
+}
+.present p {
+  font-size: 20px;
+  color: var(--dark-color);
+  margin-left: 75px;
+  margin-top: -25px;
+}
+.price_1 {
+}
+.price_2 {
+}
+.price-block_2 {
+}
+.block_2-title {
+}
+.second-block_1 {
+}
+.left-right-block {
+}
+.block-left {
+}
+.left-text {
+}
+.block-right {
+}
+.block-right_item {
+}
+.right-text {
+}
+.price-space {
+}
+.pay-input {
+}
+.pay {
+}
+.installment {
+}
+.install {
+}
+.price-text {
 }

@@ -492,7 +492,7 @@ img {
 .price-block_1 {
   border: 1px solid white;
   width: 300px;
-  height: 530px;
+  height: 515px;
   border-radius: 35px;
   margin-left: 220px;
   margin-top: 40px;
@@ -519,33 +519,72 @@ img {
   margin-left: 15px;
   border: 1px solid white;
   background-color: white;
-  height: 130px;
+  height: 105px;
   width: 270px;
   border-radius: 35px;
+}
+.present img {
+  margin-top: -10px;
 }
 .present p {
   font-size: 20px;
   color: var(--dark-color);
-  margin-left: 75px;
-  margin-top: -25px;
+  margin-left: 85px;
+  margin-top: -40px;
 }
-.price_1 {
+.price-block-item {
+  margin-left: 230px;
+  margin-top: 30px;
+  color: white;
+  font-size: 25px;
+}
+.price_1 span {
+  color: #f4944c;
 }
 .price_2 {
+  padding-top: 25px;
+}
+
+.price_2 span {
+  color: #a5c6cd;
+  text-decoration: line-through;
 }
 .price-block_2 {
+  position: absolute;
+  margin: -775px 0 0 550px;
 }
 .block_2-title {
+  margin-left: 250px;
+  color: rgba(255, 255, 255, 0.671);
+  font-size: 23px;
+}
+.price-block_2 img {
+  margin-top: -32px;
+  margin-left: 101px;
 }
 .second-block_1 {
+  margin-top: 39px;
+  border: 1px solid white;
+  width: 600px;
+  height: 515px;
+  border-radius: 35px;
 }
 .left-right-block {
 }
 .block-left {
+  width: 300px;
+  color: white;
+  font-size: 27px;
 }
-.left-text {
+
+.block-left p {
+  padding: 25px 0 0 25px;
 }
+
 .block-right {
+  position: relative;
+  width: 300px;
+  background: linear-gradient(44deg, #114b66, var(--main-color));
 }
 .block-right_item {
 }

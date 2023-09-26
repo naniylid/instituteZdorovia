@@ -85,8 +85,6 @@ header {
 }
 
 .btn {
-  margin-top: 40px;
-  margin-bottom: 170px;
   padding: 12px 80px 12px;
   border: solid 0.5px;
   border-color: var(--main-color);
@@ -570,11 +568,12 @@ img {
   border-radius: 35px;
 }
 .left-right-block {
+  display: flex;
 }
 .block-left {
   width: 300px;
   color: white;
-  font-size: 27px;
+  font-size: 23px;
 }
 
 .block-left p {
@@ -582,23 +581,95 @@ img {
 }
 
 .block-right {
-  position: relative;
   width: 300px;
-  background: linear-gradient(44deg, #114b66, var(--main-color));
+  height: 514px;
+  background: linear-gradient(65deg, var(--dark-color), var(--main-color));
+  border-radius: 0 35px 35px 0;
 }
 .block-right_item {
+  margin-top: 30px;
+  margin-left: 40px;
+  border: 1px solid white;
+  width: 211px;
+  height: 68px;
+  border-radius: 27px;
+  font-size: 25px;
+  color: white;
+}
+.block-right_item p {
+  padding: 20px 30px;
 }
 .right-text {
+  padding-top: 25px;
+  padding-left: 40px;
+}
+
+.right-text p {
+  color: white;
+  font-size: 23px;
+  padding-top: 20px;
 }
 .price-space {
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 25px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 35px;
+  width: 550px;
+  height: 91px;
+  color: #114b66;
+  font-size: 21px;
+  padding: 20px 0 0 20px;
 }
-.pay-input {
+.second-block-price {
+  position: absolute;
+  margin-left: 610px;
+  margin-top: -137px;
+  color: white;
+  font-size: 25px;
+}
+.order {
+  margin-left: 230px;
+  margin-top: 50px;
+}
+.pay-input input {
+  display: inline-block;
+
+  background-color: white;
+  width: 300px;
+  height: 70px;
+  border-radius: 45px;
 }
 .pay {
+  background-color: white;
+  color: var(--dark-color);
+  width: 300px;
+  height: 70px;
+  border-radius: 45px;
+  padding: 0;
 }
 .installment {
+  margin-top: 30px;
+}
+.installment input {
+  display: inline-block;
+  background-color: white;
+  width: 300px;
+  height: 70px;
+  border-radius: 45px;
 }
 .install {
+  padding: 0;
+  background-color: white;
+  color: var(--dark-color);
+  width: 300px;
+  height: 70px;
+  border-radius: 45px;
 }
 .price-text {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+  font-size: 25px;
 }

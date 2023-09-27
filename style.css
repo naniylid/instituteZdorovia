@@ -673,3 +673,48 @@ img {
   color: white;
   font-size: 25px;
 }
+
+/* finish list */
+.finish-block {
+}
+.finish-block-title {
+  margin: 50px 0 0 215px;
+  font-size: 40px;
+  color: var(--dark-color);
+}
+.finish-list {
+  margin-left: 202px;
+  font-size: 20px;
+  color: var(--dark-color);
+  padding: 20px 20px;
+}
+
+.finish-list-item {
+  padding-top: 10px;
+  list-style-image: url(./img/Star\ 2.png);
+  list-style-position: outside;
+  line-height: 30px;
+  --marker-size: 5px;
+  --gap-right: 10px;
+  --gap-left: 10px;
+  padding-left: calc(
+    var(--marker-size) * 2 + var(--gap-left) + var(--gap-right)
+  );
+}
+
+.reviews ul {
+  width: 730px;
+  margin: 50px 0 0 215px;
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--main-color);
+  font-size: 20px;
+}
+.reviews-list {
+  text-align: center;
+  width: 200px;
+}
+.percent {
+  font-size: 50px;
+}

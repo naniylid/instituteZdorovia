@@ -11,8 +11,9 @@ body {
   max-width: 1550.56px;
 }
 
+/* Первый лист */
 header {
-  max-height: 970px;
+  height: 970px;
   padding: 0;
   background-image: url(./img/header-photo.png);
   background-repeat: no-repeat;
@@ -20,21 +21,23 @@ header {
 }
 
 .header-logo {
-  margin-top: 80px;
+  margin-top: 40px;
   margin-left: 30%;
   align-items: center;
   width: 550px;
-  height: 100px;
+  height: 200px;
 }
 
 .date {
   margin-top: 110px;
-  margin-left: 1000px;
-  padding: 12px 80px 12px;
-  width: max-content;
+  margin-left: 1100px;
+  width: 250px;
+  height: 45px;
+  padding-top: 12px;
   border: solid 0.5px;
   border-color: var(--main-color);
   border-radius: 30px;
+  text-align: center;
 
   font-family: 'Forum';
   font-size: 20px;
@@ -42,48 +45,22 @@ header {
 }
 .logo-text {
   margin-top: 30px;
-  margin-left: 700px;
+  margin-left: 600px;
 }
 .header-text {
   margin-top: 40px;
-  margin-left: 680px;
+  margin-left: 632px;
   font-family: 'Forum';
   font-size: 20px;
   line-height: 25px;
-  color: var(--main-color);
-}
-@media (max-width: 500px) {
-  header {
-    max-height: 420px;
-  }
-  .header-logo {
-    margin-top: 10px;
-    margin-left: 40%;
-    width: 200px;
-    height: 100px;
-  }
-  .date {
-    margin-top: 30px;
-    margin-left: 65%;
-    padding: 5px 20px 5px;
-    border-radius: 30px;
-    font-size: 10px;
-  }
-  .logo-text {
-    margin-top: 3px;
-    margin-left: 50%;
-    width: 250px;
-    height: 80px;
-  }
-  .header-text {
-    margin-top: 20px;
-    margin-left: 50%;
-
-    font-size: 10px;
-    line-height: 15px;
-  }
+  color: var(--dark-color);
 }
 
+.headerbtn {
+  margin-top: 50px;
+  margin-left: 630px;
+}
+/* Кнопка */
 .btn {
   padding: 12px 80px 12px;
   border: solid 0.5px;
@@ -97,81 +74,35 @@ header {
   color: white;
 }
 
-.btn :hover {
-  opacity: 0.5;
+.btn:hover {
+  opacity: 0.7;
 }
 
-@media (max-width: 500px) {
-  .btn {
-    margin-top: 10px;
-    margin-left: 50%;
-    margin-bottom: 170px;
-    padding: 5px 20px 5px;
-    border-radius: 30px;
-    font-size: 10px;
-  }
-}
-
+/* Второй лист */
 .article {
   max-height: 600px;
   background: var(--main-color);
-  background: linear-gradient(85deg, #114b66, var(--main-color));
 }
 .article-title {
-  position: relative;
-  padding-top: 40px;
+  padding-top: 80px;
   margin-left: 310px;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 300;
-  line-height: 10px;
   color: #efeeea;
 }
 .article-text {
-  position: relative;
-
-  padding-top: 30px;
+  margin-top: 30px;
+  padding-top: 10px;
   margin-left: 310px;
-  font-size: 18px;
+  font-size: 23px;
   color: #efeeea;
-}
-
-@media (max-width: 500px) {
-  .article {
-    max-height: 350px;
-  }
-  .article-title {
-    padding-top: 30px;
-    margin-left: 20%;
-    font-size: 20px;
-  }
-  .article-text {
-    padding-top: 30px;
-    margin-left: 10%;
-    font-size: 10px;
-    color: #efeeea;
-  }
-  .text {
-    padding-bottom: 10px;
-  }
-
-  .article-img {
-    margin-left: 10%;
-    margin-top: auto;
-    width: 400px;
-    height: 380px;
-  }
-
-  figure {
-    margin-left: 10%;
-    margin-top: auto;
-  }
 }
 
 .text {
   position: relative;
   padding-bottom: 90px;
 }
-
+/* Шар */
 .article-img {
   position: absolute;
   margin-left: 920px;
@@ -183,28 +114,32 @@ header {
 figure {
   position: absolute;
   margin-left: 980px;
-  margin-top: -350px;
+  margin-top: -360px;
 }
 
+/* Второй текстовый блок */
 .article-text-first {
   height: 230px;
 }
 .first-item {
   margin-top: 80px;
   margin-left: 310px;
-  font-size: 20px;
+
+  font-size: 23px;
   color: var(--main-color);
 }
+/* Третий текстовый блок */
 .article-text-second {
-  height: 350px;
+  height: 410px;
   background-color: var(--main-color);
 }
 .second-text-title {
-  padding-top: 35px;
+  padding-top: 55px;
   margin-left: 310px;
   color: #ffff;
-  font-size: 40px;
+  font-size: 45px;
 }
+/* Что вы получите, пройдя курс? */
 .second-item {
   padding-top: 50px;
   margin-left: 310px;
@@ -219,7 +154,7 @@ figure {
 .course-info-title {
   padding-top: 60px;
   padding-bottom: 30px;
-  font-size: 40px;
+  font-size: 45px;
   color: var(--dark-color);
 }
 
@@ -247,6 +182,7 @@ img {
   padding-top: 30px;
 }
 
+/* Курс подойдет для всех */
 .course-audience {
   max-width: 1570px;
   height: 1100px;
@@ -256,7 +192,7 @@ img {
   padding-top: 70px;
   margin-left: 310px;
   color: white;
-  font-size: 40px;
+  font-size: 45px;
 }
 .list {
   padding-top: 50px;
@@ -308,7 +244,7 @@ img {
   padding-bottom: 30px;
   margin-left: 310px;
   color: var(--main-color);
-  font-size: 40px;
+  font-size: 45px;
 }
 .program-text {
   width: 750px;
@@ -373,20 +309,22 @@ img {
 
 .space-btn {
   margin-left: 60px;
+  margin-top: 30px;
 }
 
 /* Что вы сможете после курса */
 .course-possibilities {
   margin-top: 90px;
   height: 1050px;
-  background: linear-gradient(85deg, #114b66, var(--main-color));
+  background: var(--main-color);
 }
 .course-possibilities-title {
   padding: 80px 0 30px 300px;
-  font-size: 50px;
+  font-size: 45px;
   color: white;
 }
 .possibilities-list {
+  margin-left: 110px;
   padding: 40px 0 0 250px;
   font-size: 23px;
   width: 900px;
@@ -404,16 +342,15 @@ img {
   height: 1300px;
 }
 .documents-block-title {
-  margin-top: 70px;
-  margin-left: 250px;
+  margin: 70px 0 30px 350px;
   font-size: 50px;
   color: var(--dark-color);
 }
 .document-text {
-  margin-left: 210px;
+  margin-left: 350px;
   width: 800px;
   font-size: 23px;
-  color: var(--main-color);
+  color: var(--dark-color);
   line-height: 25px;
 }
 
@@ -480,12 +417,13 @@ img {
   background-color: var(--main-color);
 }
 .price-block-title {
-  padding: 50px 0 0 230px;
-  font-size: 50px;
+  padding: 80px 0 50px 230px;
+  font-size: 45px;
   color: white;
 }
 .price-title {
   margin-left: 230px;
+  width: 250px;
 }
 .price-block_1 {
   border: 1px solid white;
@@ -552,13 +490,14 @@ img {
   margin: -775px 0 0 550px;
 }
 .block_2-title {
-  margin-left: 250px;
+  margin-left: 230px;
   color: rgba(255, 255, 255, 0.671);
   font-size: 23px;
 }
 .price-block_2 img {
-  margin-top: -32px;
-  margin-left: 101px;
+  margin-top: -43px;
+  margin-left: 50px;
+  width: 450px;
 }
 .second-block_1 {
   margin-top: 39px;
@@ -573,7 +512,7 @@ img {
 .block-left {
   width: 300px;
   color: white;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .block-left p {
@@ -606,7 +545,7 @@ img {
 
 .right-text p {
   color: white;
-  font-size: 23px;
+  font-size: 20px;
   padding-top: 20px;
 }
 .price-space {
@@ -629,17 +568,26 @@ img {
   color: white;
   font-size: 25px;
 }
+/* Кнопки оплаты */
 .order {
   margin-left: 230px;
   margin-top: 50px;
+  display: flex;
 }
-.pay-input input {
-  display: inline-block;
 
-  background-color: white;
+.order-first {
   width: 300px;
-  height: 70px;
-  border-radius: 45px;
+}
+.order-first button {
+  margin-top: 20px;
+}
+
+.order-second {
+  width: 300px;
+}
+.order-second button {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .pay {
   background-color: white;
@@ -649,16 +597,7 @@ img {
   border-radius: 45px;
   padding: 0;
 }
-.installment {
-  margin-top: 30px;
-}
-.installment input {
-  display: inline-block;
-  background-color: white;
-  width: 300px;
-  height: 70px;
-  border-radius: 45px;
-}
+
 .install {
   padding: 0;
   background-color: white;
@@ -667,39 +606,34 @@ img {
   height: 70px;
   border-radius: 45px;
 }
+
 .price-text {
-  margin-top: 40px;
-  padding-bottom: 40px;
+  margin: 70px 0 0 230px;
+
+  padding-bottom: 90px;
   color: white;
   font-size: 25px;
 }
 
 /* finish list */
-.finish-block {
-}
 .finish-block-title {
-  margin: 50px 0 0 215px;
-  font-size: 40px;
+  margin: 70px 0 0 280px;
+  font-size: 45px;
   color: var(--dark-color);
 }
 .finish-list {
-  margin-left: 202px;
+  margin-left: 220px;
   font-size: 20px;
   color: var(--dark-color);
   padding: 20px 20px;
 }
+.finish-list li {
+  margin-top: 30px;
+}
 
 .finish-list-item {
-  padding-top: 10px;
-  list-style-image: url(./img/Star\ 2.png);
-  list-style-position: outside;
-  line-height: 30px;
-  --marker-size: 5px;
-  --gap-right: 10px;
-  --gap-left: 10px;
-  padding-left: calc(
-    var(--marker-size) * 2 + var(--gap-left) + var(--gap-right)
-  );
+  background: url(./img/Star\ 2.png) no-repeat center left;
+  padding-left: 70px;
 }
 
 .reviews ul {

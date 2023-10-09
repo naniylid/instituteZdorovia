@@ -30,8 +30,8 @@ header {
 
 .date {
   margin-top: 110px;
-  margin-left: 1100px;
-  width: 250px;
+  margin-left: 980px;
+  width: 220px;
   height: 45px;
   padding-top: 12px;
   border: solid 0.5px;
@@ -84,76 +84,62 @@ header {
   background: var(--main-color);
 }
 .article-title {
-  padding-top: 80px;
+  padding-top: 78px;
   margin-left: 310px;
   font-size: 45px;
   font-weight: 300;
   color: #efeeea;
 }
-.article-text {
-  margin-top: 30px;
-  padding-top: 10px;
-  margin-left: 310px;
+.article-text-block {
+  margin: 13px 0 0 310px;
   font-size: 23px;
   color: #efeeea;
+  line-height: 24px;
+  padding-bottom: 78px;
 }
 
-.text {
-  position: relative;
-  padding-bottom: 90px;
-}
-/* Шар */
-.article-img {
-  position: absolute;
-  margin-left: 920px;
-  margin-top: -406px;
-  width: 400px;
-  height: 380px;
-}
-
-figure {
-  position: absolute;
-  margin-left: 980px;
-  margin-top: -360px;
+.article-text-block p {
+  padding-top: 35px;
 }
 
 /* Второй текстовый блок */
-.article-text-first {
-  height: 230px;
-}
 .first-item {
-  margin-top: 80px;
+  margin-top: 58px;
   margin-left: 310px;
-
+  line-height: 24px;
   font-size: 23px;
   color: var(--main-color);
+  margin-bottom: 78px;
+}
+
+.first-item p {
+  padding-top: 20px;
 }
 /* Третий текстовый блок */
 .article-text-second {
-  height: 410px;
   background-color: var(--main-color);
 }
 .second-text-title {
-  padding-top: 55px;
+  padding-top: 78px;
   margin-left: 310px;
   color: #ffff;
   font-size: 45px;
 }
-/* Что вы получите, пройдя курс? */
+
 .second-item {
-  padding-top: 50px;
+  padding-top: 48px;
+  padding-bottom: 78px;
   margin-left: 310px;
   font-size: 23px;
   color: #ffff;
 }
+/* Что вы получите, пройдя курс? */
 .course-info {
-  height: max-content;
   margin-left: 310px;
-  height: 700px;
 }
 .course-info-title {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 78px;
+  padding-bottom: 48px;
   font-size: 45px;
   color: var(--dark-color);
 }
@@ -164,8 +150,10 @@ figure {
   flex-wrap: wrap;
   column-gap: 25px;
   row-gap: 20px;
+  padding-bottom: 78px;
 }
 .course-info-list-item {
+  padding-top: 20px;
   width: 230px;
   height: 230px;
   border-radius: 20px;
@@ -184,52 +172,51 @@ img {
 
 /* Курс подойдет для всех */
 .course-audience {
-  max-width: 1570px;
-  height: 1100px;
   background: var(--main-color);
 }
 .course-audience-title {
-  padding-top: 70px;
+  padding-top: 78px;
   margin-left: 310px;
   color: white;
   font-size: 45px;
 }
+.audience-picture {
+  z-index: 0;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 500px;
+  width: 696px;
+  height: 430px;
+}
 .list {
-  padding-top: 50px;
+  z-index: 4;
+  padding-top: 28px;
   padding-left: 350px;
 }
 .audience-list-item {
-  width: 500px;
   margin-top: 20px;
-  padding: 20px 10px 20px 30px;
+  width: 416px;
+  min-height: 61px;
   border: solid 0.5px;
   border-color: var(--main-color);
   background-color: #eaf5f9;
   border-radius: 40px;
+  padding: 10px 0 0 20px;
 
-  font-size: 18px;
+  font-size: 20px;
   color: var(--dark-color);
 }
 .list-icon {
   position: absolute;
   margin-top: -31px;
-  margin-left: -120px;
-}
-.audience-picture {
-  position: absolute;
-  display: flex;
-  margin-top: -570px;
-  margin-left: 700px;
-  width: 696px;
-  height: 389px;
+  margin-left: -95px;
 }
 .audience-text {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 300px;
-  width: 700px;
+  margin: 48px 0 0 300px;
 
-  padding: 20px 10px 20px 30px;
+  width: 600px;
+  height: 130px;
+  padding: 20px 0 0 30px;
   border: solid 0.5px;
   border-color: var(--main-color);
   background-color: #77b2c8;
@@ -237,7 +224,10 @@ img {
   font-size: 20px;
   color: white;
 }
-
+.audience-item {
+  color: var(--main-color);
+  padding-bottom: 78px;
+}
 /* Программа курса */
 .course-program-title {
   padding-top: 70px;

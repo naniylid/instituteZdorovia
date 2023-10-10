@@ -230,37 +230,66 @@ img {
 }
 /* Программа курса */
 .course-program-title {
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding-top: 78px;
+  padding-bottom: 48px;
   margin-left: 310px;
   color: var(--main-color);
   font-size: 45px;
 }
-.program-text {
-  width: 750px;
-  margin-left: 210px;
-  padding-top: 40px;
-  font-size: 20px;
-  line-height: 25px;
-  color: var(--dark-color);
+.course-program-block {
+  border-style: solid;
+  border-style: none;
+  border-bottom: 1px solid var(--dark-color);
+  margin-left: 300px;
+  width: 900px;
 }
 
-.program-text span {
-  margin-left: 25px;
-  font-size: 27px;
+.course-program-block h3 {
+  border-top: 1px solid var(--dark-color);
+}
+
+h3 button {
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+
+  height: 78px;
+  padding: 30px 0;
+  color: var(--dark-color);
+  width: 820px;
+  font-size: 20px;
+}
+
+h3 button:focus svg {
+  outline: 1px solid var(--dark-color);
+}
+
+button svg {
+  height: 1em;
+  margin-left: 0.5em;
+}
+
+.program-text {
+  padding: 48px 0;
+  color: var(--dark-color);
+  font-size: 20px;
+  line-height: 25px;
 }
 
 .program-text p {
-  margin-top: 25px;
+  padding-top: 25px;
 }
+
 .program-video {
-  padding-top: 30px;
-  margin-left: 400px;
+  padding: 48px 0 0 320px;
 }
-.create-line {
-  margin-top: 20px;
-  width: 1000px;
-  border-top: 3px solid var(--dark-color);
+
+[aria-expanded='true'] .vert {
+  display: none;
+}
+
+[aria-expanded] rect {
+  fill: currentColor;
 }
 
 /* Суфийское пространство */
@@ -281,14 +310,14 @@ img {
   margin-top: 250px;
 }
 .space-block-title {
-  padding: 60px 0 10px 60px;
+  padding: 78px 0 0 60px;
   font-size: 40px;
   color: var(--dark-color);
 }
 .space-block-text {
   padding-left: 60px;
   width: 850px;
-  padding-top: 40px;
+  padding-top: 48px;
   font-size: 19px;
   line-height: 25px;
   color: var(--dark-color);
@@ -299,7 +328,7 @@ img {
 
 .space-btn {
   margin-left: 60px;
-  margin-top: 30px;
+  margin-top: 48px;
 }
 
 /* Что вы сможете после курса */
@@ -321,10 +350,18 @@ img {
   color: white;
 }
 
-.number-list {
+.number {
   position: absolute;
-  margin-top: -35px;
-  margin-left: -95px;
+  margin-left: -70px;
+  padding-top: 3px;
+  border: 1px solid var(--main-color);
+  background: white;
+  color: var(--dark-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
 }
 
 /* Лицензии */

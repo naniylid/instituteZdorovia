@@ -1,5 +1,6 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('./fonts/younglovees.ttf');
 
 *:root {
   --main-color: #477a8d;
@@ -449,6 +450,7 @@ button svg {
 .price-block-title {
   padding: 80px 0 50px 230px;
   font-size: 45px;
+
   color: white;
 }
 .price-title {
@@ -457,7 +459,7 @@ button svg {
 .price-block_1 {
   border: 1px solid white;
   width: 300px;
-  height: 815px;
+  height: 505px;
   border-radius: 35px;
   margin-left: 220px;
 }
@@ -504,10 +506,10 @@ button svg {
   font-size: 20px;
   color: var(--dark-color);
   margin-left: 85px;
-  margin-top: -40px;
+  margin-top: -45px;
 }
 .price-block-item {
-  margin-left: 25px;
+  margin-left: 250px;
   margin-top: 30px;
   color: white;
   font-size: 23px;
@@ -516,37 +518,43 @@ button svg {
 .price_1-item {
   font-size: 30px;
 }
-.price-second span {
-  color: #f4944c;
-}
-.price_2 {
-  padding-top: 25px;
+.price_2-item {
+  padding-top: -80px;
+  font-size: 30px;
 }
 
-.price_2 span {
-  font-size: 35px;
+.price-second span {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.price_2 {
+  margin-top: 25px;
+}
+
+.decoration {
+  font-size: 30px;
   color: #a5c6cd;
   text-decoration: line-through;
 }
 .price-block_2 {
   position: absolute;
-  margin: -775px 0 0 550px;
+  margin: -814px 0 0 550px;
 }
 .block_2-title {
+  margin-top: 20px;
   margin-left: 230px;
   color: rgba(255, 255, 255, 0.671);
   font-size: 23px;
 }
 .price-block_2 img {
-  margin-top: -43px;
-  margin-left: 50px;
+  margin: -43px 0 20px 50px;
   width: 450px;
 }
 .second-block_1 {
   margin-top: 39px;
   border: 1px solid white;
   width: 600px;
-  height: 515px;
+  height: 505px;
   border-radius: 35px;
 }
 .left-right-block {
@@ -564,19 +572,20 @@ button svg {
 
 .block-right {
   width: 300px;
-  height: 514px;
-  background: linear-gradient(65deg, var(--dark-color), var(--main-color));
-  border-radius: 0 35px 35px 0;
+  height: 400px;
+  background: linear-gradient(95deg, var(--dark-color), var(--main-color));
+  border-radius: 35px;
 }
 .block-right_item {
-  margin-top: 30px;
-  margin-left: 40px;
-  border: 1px solid white;
-  width: 211px;
-  height: 68px;
-  border-radius: 27px;
+  border: 1px solid var(--dark-color);
+  background-color: var(--dark-color);
+  width: 298px;
+  height: 78px;
+  border-radius: 38px;
   font-size: 25px;
   color: white;
+  padding-top: 5px;
+  text-align: center;
 }
 .block-right_item p {
   padding: 20px 30px;
@@ -591,23 +600,17 @@ button svg {
   font-size: 20px;
   padding-top: 20px;
 }
-.price-space {
-  position: absolute;
-  margin-top: 400px;
-  margin-left: 25px;
-  border: 1px solid white;
-  background-color: white;
-  border-radius: 35px;
-  width: 550px;
-  height: 91px;
-  color: #114b66;
-  font-size: 21px;
-  padding: 20px 0 0 20px;
+
+.right-text-item {
+  font-family: 'Young Love ES';
+  margin-top: 90px;
+  margin-left: 120px;
 }
+
 .second-block-price {
   position: absolute;
   margin-left: 610px;
-  margin-top: -137px;
+  margin-top: -236px;
   color: white;
   font-size: 25px;
 }
@@ -635,7 +638,7 @@ button svg {
 .pay {
   background-color: white;
   color: var(--dark-color);
-  width: 300px;
+  width: 270px;
   height: 70px;
   border-radius: 45px;
   padding: 0;
@@ -645,7 +648,7 @@ button svg {
   padding: 0;
   background-color: white;
   color: var(--dark-color);
-  width: 300px;
+  width: 270px;
   height: 70px;
   border-radius: 45px;
 }
@@ -660,38 +663,40 @@ button svg {
 
 /* finish list */
 .finish-block-title {
-  margin: 70px 0 0 280px;
-  font-size: 45px;
+  margin: 4.557vw 0 0 18.229vw;
+  font-size: 2.929vw;
   color: var(--dark-color);
 }
 .finish-list {
-  margin-left: 220px;
-  font-size: 20px;
+  margin-left: 14.322vw;
+  font-size: 1.302vw;
   color: var(--dark-color);
-  padding: 20px 20px;
+  padding: 1.302vw 1.302vw;
 }
 .finish-list li {
-  margin-top: 30px;
+  margin-top: 1.953vw;
 }
 
 .finish-list-item {
   background: url(./img/Star\ 2.png) no-repeat center left;
-  padding-left: 70px;
+  background-size: 2.5%;
+  padding-left: 4.557vw;
 }
 
 .reviews ul {
-  width: 730px;
-  margin: 50px 0 0 215px;
+  width: 47.526vw;
+  margin: 3.255vw 0 0 13.997vw;
   display: flex;
   justify-content: space-between;
 
   color: var(--main-color);
-  font-size: 20px;
+  font-size: 1.302vw;
 }
 .reviews-list {
   text-align: center;
-  width: 200px;
+  width: 13.021vw;
 }
 .percent {
-  font-size: 50px;
+  font-size: 3.255vw;
 }
+/* Сделать слайдер видео и кнопки оплата */

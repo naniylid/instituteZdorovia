@@ -6,6 +6,12 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="mobile.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+
     <title>Квантовая психоэнергетика</title>
   </head>
   <body>
@@ -396,20 +402,39 @@
               свидетельством, подтверждающим авторство программы.
             </p>
           </div>
-          <div class="slider">
-            <div class="slide">
-              <img src="img/docs/image 1.png" alt="Лицензия" />
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img  src="img/docs/image 1.png" alt="Лицензия" class="slide " />
+              </div>
+              <div class="swiper-slide"> 
+                <img src="img/docs/image 4.png" alt="Лицензия" class="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/docs/image 1.png" alt="Лицензия" class="slide" />
+              </div>
+            
             </div>
-            <div class="slide">
-              <img src="img/docs/image 1.png" alt="Лицензия" />
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev "></div>
+           
+            <div class="swiper-button-next ">
             </div>
-            <div class="slide">
-              <img src="img/docs/image 1.png" alt="Лицензия" />
-            </div>
-            <div class="slide">
-              <img src="img/docs/image 1.png" alt="Лицензия" />
-            </div>
+        
           </div>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.mySwiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+          
           <div class="document-text">
             <p>
               Мы, как образовательная организация, имеем право выдать документы,
@@ -428,7 +453,7 @@
         <div class="price-block">
           <h2 class="price-block-title">Стоимость</h2>
           <div class="price-block_1">
-            <img src="./img/price/полный курс.png" alt="" class="price-title" />
+            <img src="./img/price/полный курс.svg" alt="" class="price-title" />
             <div class="first-block">
               <ul>
                 <li class="block-list">
@@ -454,23 +479,13 @@
               </div>
             </div>
           </div>
-          <div class="price-block-item">
-            <p class="price_1">
-              Рассрочка на 3-12 мес: <br />
-              <span class="price_1-item">4 167 РУБ/мес</span>
-            </p>
-            <p class="price_2">
-              Полная стоимость: <br />
-              <div class="decoration">53 000 РУБ</div><br />
-              <span class="price_2-item">50 000 РУБ</span>
-            </p>
-          </div>
+          
           <div class="price-block_2">
             
             <div class="second-block_1">
               <p class="block_2-title">одно занятие</p>
             <img
-              src="./img/price/Суфийское пространство.png"
+              src="./img/price/суфийское пространство.svg"
               alt=""
               class="price-title"
             />
@@ -480,8 +495,6 @@
 <p>К ней которой может <br>
   присоединится любой <br>желающий.</p>
 <p>А также повторно все,<br> кто обучился ранее.</p>
-
-
                 </div>
                 <div class="block-right">
                   <div class="block-right_item"><p>2 ПО ЦЕНЕ 1</p></div>
@@ -497,16 +510,33 @@
             </div>
           </div>
 
-          <div class="second-block-price">
-            <p class="price_1 price-second">
-              Рассрочка на 3-12 месяцев: <br />
+          <div class="price-block-item">
+            <div class="price_1">
+             <p>
+              Рассрочка на 3-12 мес: <br />
+              <span >4 167 РУБ/мес</span>
+             </p>
+             <p> Рассрочка на 3-12 месяцев: <br />
               <span>1 250 РУБ/мес.</span>
             </p>
-            <p class="price_2">
-              Полная стоимость:<br />
+            </div>
+            <div class="price_2">
+              <div class="price_2-item">
+                <p>
+            Полная стоимость: <br />
+              <div class="decoration">53 000 РУБ</div><br />
+              <span>50 000 РУБ</span>
+           </p>    
+              </div>
+              <div class="price_2-item">
+                 <p>
+             Полная стоимость:<br />
               <span>15 000 РУБ</span>
-            </p>
+           </p>
+              </div>
+            </div>
           </div>
+         
           <div class="order">
             <div class="order-first">
               <button class="pay btn">Оплатить участие</button>
@@ -569,26 +599,117 @@
               </li>
             </ul>
           </div>
-          <div class="photo slider">
-            <div class="slide">
-              <img src="img/docs/image 1.png" alt="Лицензия" />
-            </div>
-            <div class="slide">
-              <img src="img/docs/image 2.png" alt="Лицензия" />
+       
+          <div class="container">
+            <div class="rev_slider">
+              <div class="rev_slide">
+                <img src="./img/docs/image 1.png" alt="">
+              </div>
+              <div class="rev_slide">
+                <img src="./img/docs/image 1.png" alt="">
+              </div>
+              <div class="rev_slide">
+                <img src="./img/docs/image 1.png" alt="">
+              </div>
+              <div class="rev_slide">
+                <img src="./img/docs/image 1.png" alt="">
+              </div>
+              <div class="rev_slide">
+                <img src="./img/docs/image 1.png" alt="">
+              </div>
+              <div class="rev_slide">
+                <img src="./img/docs/image 1.png" alt="">
+              </div>
+             
             </div>
           </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+          <script>
+            var rev = $('.rev_slider');
+rev
+  .on('init', function (event, slick, currentSlide) {
+    var cur = $(slick.$slides[slick.currentSlide]),
+      next = cur.next(),
+      prev = cur.prev();
+    prev.addClass('slick-sprev');
+    next.addClass('slick-snext');
+    cur.removeClass('slick-snext').removeClass('slick-sprev');
+    slick.$prev = prev;
+    slick.$next = next;
+  })
+  .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    console.log('beforeChange');
+    var cur = $(slick.$slides[nextSlide]);
+    console.log(slick.$prev, slick.$next);
+    slick.$prev.removeClass('slick-sprev');
+    slick.$next.removeClass('slick-snext');
+    (next = cur.next()), (prev = cur.prev());
+    prev.prev();
+    prev.next();
+    prev.addClass('slick-sprev');
+    next.addClass('slick-snext');
+    slick.$prev = prev;
+    slick.$next = next;
+    cur.removeClass('slick-next').removeClass('slick-sprev');
+  });
 
-          <div class="video slider">
-            <div class="slide">
-              <video src=""></video>
+rev.slick({
+  speed: 1000,
+  arrows: true,
+  dots: false,
+  focusOnSelect: true,
+  prevArrow: '<button> &#10095</button>',
+  nextArrow: '<button> &#10094</button>',
+  infinite: true,
+  centerMode: true,
+  slidesPerRow: 1,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerPadding: '0',
+  swipe: true,
+  customPaging: function (slider, i) {
+    return '';
+  },
+  /*infinite: false,*/
+});
+
+          </script>
+
+<div class="swiper mySwiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img  src="img/docs/image 1.png" alt="Лицензия" class="slide " />
+    </div>
+    <div class="swiper-slide"> 
+      <img src="img/docs/image 4.png" alt="Лицензия" class="slide" />
+    </div>
+    <div class="swiper-slide">
+      <img src="img/docs/image 1.png" alt="Лицензия" class="slide" />
+    </div>
+  
+  </div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev "></div>
+ 
+  <div class="swiper-button-next ">
+  </div>
+
+</div>
             </div>
-            <div class="slide">
-              <video src=""></video>
-            </div>
-          </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <img src="./img/footer/name.svg" alt="" class="footer-name">
+      <button class="footer-btn pay">Вернуться к ценам</button>
+      <img src="./img/footer/logo.svg" alt="" class="footer-logo">
+    </footer>
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
   </body>
 </html>

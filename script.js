@@ -1,5 +1,6 @@
 'use strict';
-(function () {
+
+function windowPlus() {
   const headings = document.querySelectorAll('h3');
 
   Array.prototype.forEach.call(headings, h => {
@@ -13,4 +14,6 @@
       target.hidden = expanded;
     };
   });
-})();
+}
+
+windowPlus();

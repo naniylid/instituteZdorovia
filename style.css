@@ -78,6 +78,10 @@ header {
   opacity: 0.7;
 }
 
+.headerbtn > a {
+  color: white;
+}
+
 /* Второй лист */
 .article {
   background: var(--main-color);
@@ -161,8 +165,8 @@ header {
   color: var(--dark-color);
 }
 
-.course-info-list-item p,
-img {
+.course-info-list-item img {
+  width: 35%;
   padding-left: 1.953vw;
   padding-top: 1.953vw;
 }
@@ -204,10 +208,11 @@ img {
   color: var(--dark-color);
 }
 .list-icon {
+  padding-top: 1.953vw;
   position: absolute;
   margin-top: -2.018vw;
   margin-left: -6.184vw;
-  width: 5%;
+  width: 2%;
 }
 .audience-text {
   margin: 3.125vw 0 0 19.531vw;
@@ -331,6 +336,10 @@ button svg {
   margin-top: 3.125vw;
 }
 
+.space-btn > a {
+  color: white;
+}
+
 /* Что вы сможете после курса */
 .course-possibilities {
   margin-top: 5.859vw;
@@ -366,7 +375,7 @@ button svg {
 
 /* Лицензии */
 .documents-block {
-  height: 84.635vw;
+  height: 89.635vw;
 }
 .documents-block-title {
   margin: 4.557vw 0 1.953vw 22.786vw;
@@ -374,6 +383,7 @@ button svg {
   color: var(--dark-color);
 }
 .document-text {
+  margin-bottom: 48px;
   margin-left: 22.786vw;
   width: 52.083vw;
   font-size: 1.497vw;
@@ -385,10 +395,17 @@ button svg {
   padding-top: 1.953vw;
 }
 
-/* Slider */
+.document-image {
+  margin-top: 48px;
+  margin-bottom: 78px;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+}
 
+/* Slider */
 .swiper-slide {
-  width: 200px;
+  padding-left: 20px;
   text-align: center;
   background: #fff;
   display: flex;
@@ -400,22 +417,25 @@ button svg {
   display: block;
 }
 .swiper {
-  width: 20%;
-  margin-top: 20px;
-  height: 30%;
+  width: 25%;
+
+  height: 20%;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
   display: flex;
 }
 
-.swiper-slide {
+.swiper-slide::after {
   margin-left: 25px;
   position: absolute;
   top: 0;
-  width: auto;
-  height: auto;
 }
+.swiper-slide img {
+  width: 75%;
+  margin-left: 30px;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 30px !important;
@@ -442,11 +462,12 @@ button svg {
 .price-block-title {
   padding: 80px 0 50px 230px;
   font-size: 47px;
-
   color: white;
 }
 .price-title {
   width: 250px;
+  padding-top: 20px;
+  padding-left: 25px;
 }
 .price-block_1 {
   border: 1px solid white;
@@ -491,13 +512,18 @@ button svg {
   width: 270px;
   border-radius: 35px;
 }
+
+.present {
+  padding-top: 30px;
+  padding-left: 20px;
+}
 .present img {
   margin-top: -10px;
 }
 .present p {
   font-size: 24px;
   color: var(--dark-color);
-  margin-left: 85px;
+  margin-left: 70px;
   margin-top: -49px;
 }
 .price-block-item {
@@ -705,98 +731,29 @@ button svg {
   font-size: 3.255vw;
 }
 
-/* Slider second */
-.container {
-  width: 900px;
-  margin: 48px 200px;
-  max-width: 80%;
-}
+/* Slider 2 */
+.reviews-swiper > .swiper {
+  width: 30%;
+  margin-top: 48px;
+  padding-left: 30px;
 
-.rev_slider {
-  margin: 48px 200px;
-}
-
-.slick-list {
-  padding-top: 10% !important;
-  padding-bottom: 10% !important;
-  padding-left: 15% !important;
-  padding-right: 15% !important;
-}
-
-.slick-dots {
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.slick-track {
-  max-width: 100% !important;
-  transform: translate3d(0, 0, 0) !important;
-  perspective: 100px;
-}
-
-.slick-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  opacity: 0;
-  width: 100% !important;
-  transform: translate3d(0, 0, 0);
-  transition: transform 1s, opacity 1s;
-}
-
-.slick-snext,
-.slick-sprev {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
   display: flex;
 }
 
-.slick-current {
-  opacity: 1;
-  position: relative;
-  display: block;
-  transform: translate3d(0, 0, 20px);
-  z-index: 2;
+/* Slider 3 */
+
+.slider_3 {
+  margin: 48px 0 78px 0;
+  width: 30%;
 }
 
-.slick-snext {
-  opacity: 1;
-  transform: translate3d(20%, 0, 0px);
-  z-index: 1;
-}
-
-.slick-sprev {
-  opacity: 1;
-  transform: translate3d(-20%, 0, 0px);
-}
-
-.rev_slider > button {
-  font-size: 25px !important;
-  width: 50px !important;
-  height: 50px !important;
-  border-radius: 50%;
-  color: var(--main-color);
-  background: #f3f5f7;
-}
-
-.slick-arrow:first-child {
-  position: relative;
-
-  margin-left: 80%;
-}
-
-.slick-arrow:last-child {
-  position: relative;
-  margin-left: -20%;
-}
 /* Footer */
 .footer {
   background-color: var(--main-color);
-  height: 700px;
+  height: 500px;
 }
 .footer-name {
   margin-top: 78px;
@@ -808,7 +765,9 @@ button svg {
   margin-top: 20%;
   font-size: 23px;
 }
-
+.footer-btn > a {
+  color: var(--main-color);
+}
 .footer-btn:hover {
   opacity: 0.7;
 }
@@ -818,5 +777,3 @@ button svg {
   margin-left: -33%;
   width: 50%;
 }
-
-/* Сделать слайдер видео и кнопки оплата */

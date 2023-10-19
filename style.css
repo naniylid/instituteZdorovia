@@ -42,7 +42,7 @@ header {
   color: var(--main-color);
 }
 .logo-text {
-  margin-top: 5%;
+  margin-top: 0.8%;
   margin-left: 40.57%;
   width: 50%;
   height: 50%;
@@ -107,7 +107,7 @@ header {
 
 /* Второй текстовый блок */
 .first-item {
-  margin: 5.078vw 0 5.078vw 25.182vw;
+  margin: 7.078vw 0 7.078vw 25.182vw;
   line-height: 1.562vw;
   font-size: 1.497vw;
   color: var(--main-color);
@@ -150,25 +150,26 @@ header {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1.627vw;
-  row-gap: 1.302vw;
+  row-gap: 1.627vw;
   padding-bottom: 5.078vw;
 }
 .course-info-list-item {
-  padding-top: 1.302vw;
-  width: 14.974vw;
-  height: 14.974vw;
+  padding-top: 0.5vw;
+  width: 16.974vw;
+  height: 11.974vw;
   border-radius: 1.302vw;
   background-color: #f3f5f7;
-  align-items: center;
+  padding-left: 1.053vw;
+}
 
+.course-info-list-item p {
+  padding-top: 0.1vw;
   font-size: 1.302vw;
   color: var(--dark-color);
 }
 
 .course-info-list-item img {
-  width: 35%;
-  padding-left: 1.953vw;
-  padding-top: 1.953vw;
+  width: 33%;
 }
 
 /* Курс подойдет для всех */
@@ -201,16 +202,20 @@ header {
   z-index: 4;
   margin-top: 1.302vw;
   width: 27.083vw;
-  min-height: 3.971vw;
+  min-height: 4.371vw;
   border: solid 0.065vw;
   border-color: var(--main-color);
   background-color: #eaf5f9;
   border-radius: 2.604vw;
-  padding: 0.651vw 0 0 1.302vw;
-
+  padding: 0.651vw 0 0 1.702vw;
   font-size: 1.302vw;
   color: var(--dark-color);
 }
+
+.audience-list-item p {
+  padding-top: 0.7vw;
+}
+
 .list-icon {
   padding-top: 1.953vw;
   position: absolute;
@@ -315,7 +320,7 @@ button svg {
 }
 .space-block {
   position: absolute;
-  border: 0.2vw solid var(--dark-color);
+  border: 0.065vw solid var(--dark-color);
   background-color: white;
   border-radius: 2.278vw;
   width: 51.848vw;
@@ -405,19 +410,53 @@ button svg {
   padding-top: 1.953vw;
 }
 
+.img-container {
+  display: flex;
+}
 .document-image {
   margin-top: 3.125vw;
   margin-bottom: 5.078vw;
   display: flex;
   justify-content: space-between;
   height: 19.531vw;
+  cursor: pointer;
 }
 
 .document-image img:last-child {
   margin-left: 1.953vw;
 }
+.pop-up {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
 
+.pop-up img {
+  position: absolute;
+  /* left: 15%;
+  top: 17%; */
+  width: 40%;
+}
+
+.pop-up span {
+  position: fixed;
+  top: 10%;
+  left: 80%;
+  width: 3%;
+  height: 5%;
+  padding-top: 0.5%;
+  background: white;
+  border-radius: 15%;
+  font-size: 3.906vw;
+  font-weight: 300;
+  text-align: center;
+}
 /* Slider */
+
 .swiper-slide {
   padding-left: 1.302vw;
   text-align: center;
@@ -429,7 +468,13 @@ button svg {
 
 .swiper-slide img {
   display: block;
+  width: 70%;
+  height: 40%;
+  position: relative;
+
+  transition: transform 0.2s;
 }
+
 .swiper {
   width: 25%;
 
@@ -492,7 +537,7 @@ button svg {
 }
 
 .first-block {
-  border: 0.5vw solid white;
+  border: 0.065vw solid white;
   background-color: white;
   height: 16.276vw;
   width: 17.578vw;
@@ -615,12 +660,12 @@ button svg {
   margin-left: 0.651vw;
   width: 19.531vw;
   height: 23.893vw;
-  background: linear-gradient(95deg, var(--dark-color), var(--main-color));
+  background: linear-gradient(95deg, #285365, var(--main-color));
   border-radius: 2.278vw;
 }
 .block-right_item {
-  border: 0.065vw solid var(--dark-color);
-  background-color: var(--dark-color);
+  border: 0.065vw solid #285365;
+  background-color: #285365;
   width: 19.401vw;
   height: 5.078vw;
   border-radius: 2.474vw;
@@ -639,7 +684,7 @@ button svg {
 .right-text p {
   color: white;
   font-size: 1.562vw;
-  padding-top: 1.302vw;
+  padding-top: 0.03vw;
 }
 
 @font-face {
@@ -735,7 +780,7 @@ button svg {
 
 .reviews ul {
   width: 62.526vw;
-  margin: 4.255vw 0 0 13.997vw;
+  margin: 7.955vw 0 0 13.997vw;
   display: flex;
   justify-content: space-between;
   color: var(--main-color);
@@ -754,7 +799,7 @@ button svg {
 /* Slider 2 */
 .reviews-swiper > .swiper {
   width: 30%;
-  margin-top: 3.125vw;
+  margin-top: 2.125vw;
   padding-left: 1.053vw;
 
   position: relative;
@@ -776,14 +821,15 @@ button svg {
   height: 32.552vw;
 }
 .footer-name {
-  margin-top: 5.078vw;
-  margin-left: 35%;
-  width: 30%;
+  margin-top: 4.078vw;
+  margin-left: 41%;
+  width: 20%;
 }
 .footer-btn {
-  margin-left: -25%;
-  margin-top: 20%;
+  margin-left: -19.5%;
+  margin-top: 25%;
   font-size: 1.497vw;
+  transition: 0.2s;
 }
 .footer-btn > a {
   color: var(--main-color);

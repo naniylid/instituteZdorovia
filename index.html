@@ -82,45 +82,36 @@
               <li class="course-info-list-item">
                 <img src="./img/info-list/Group 109.png" alt="" />
                 <p>
-                  Научитесь жить здесь <br />
-                  и сейчас
+                  Поймете как жить<br> здесь и сейчас
                 </p>
               </li>
               <li class="course-info-list-item">
                 <img src="./img/info-list/Group 110.png" alt="" />
                 <p>
-                  Начнете доверять <br />
-                  себе и миру
+                  Доверие к себе и к <br> окружающему миру
                 </p>
               </li>
               <li class="course-info-list-item">
                 <img src="./img/info-list/Group 111.png" alt="" />
                 <p>
-                  Перестанете сливать <br />
-                  энергию
+                  Вернете жизненную <br> энергию и силы
                 </p>
               </li>
 
               <li class="course-info-list-item">
-                <img src="./img/info-list/Group 112.png" alt="" />
+                <img src="./img/info-list/Group 116.png" alt="" />
                 <p>
-                  Поток энергии и <br />
-                  новые результаты: <br />
-                  финансовые и <br />
-                  социальные
+                  Энергию, денежные <br>социальные успехи
                 </p>
               </li>
               <li class="course-info-list-item">
                 <img src="./img/info-list/Group 113.png" alt="" />
                 <p>
-                  Инсайты, которые <br />
-                  помогут вам перейти <br />
-                  на лучший уровень <br />
-                  жизни
+                  Инсайты и новый <br>уровень жизни
                 </p>
               </li>
               <li class="course-info-list-item">
-                <img src="./img/info-list/Group 116.png" alt="" />
+                <img src="./img/info-list/Group 112.png" alt="" />
                 <p>
                   Уверенность в себе и <br />
                   в своих решениях
@@ -148,11 +139,11 @@
               </li>
               <li class="audience-list-item">
                 <img src="./img/Star 6.svg" alt="" class="list-icon" />
-                Кто занимается здоровьем клиентов
+             <p> Кто занимается здоровьем клиентов</p>  
               </li>
               <li class="audience-list-item">
                 <img src="./img/Star 6.svg" alt="" class="list-icon" />
-                Для врачей, психологов и энергопрактиков
+              <p> Для врачей, психологов и энергопрактиков</p> 
               </li>
               <li class="audience-list-item">
                 <img src="./img/Star 6.svg" alt="" class="list-icon" />
@@ -402,16 +393,21 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <img  src="img/docs/лицензия.jpeg" alt="Лицензия" class="slide " />
+              <div class="swiper-slide enlarged">
+                <div class="image-container">
+                   <img  src="img/docs/лицензия.jpeg" alt="Лицензия" onclick="enlargeImage(this)"/>
+                </div>
               </div>
-              <div class="swiper-slide"> 
-                <img src="img/docs/авторство кванты.jpeg" alt="Лицензия" class="slide" />
+              <div class="swiper-slide enlarged"> 
+                <div class="image-container">
+                <img src="img/docs/авторство кванты.jpeg" alt="Лицензия" onclick="enlargeImage(this)" />
               </div>
-              <div class="swiper-slide">
-                <img src="img/docs/сертификат пфр.jpeg" alt="Лицензия" class="slide" />
+            </div>
+              <div class="swiper-slide enlarged">
+                <div class="image-container">
+                <img src="img/docs/сертификат пфр.jpeg" alt="Лицензия" onclick="enlargeImage(this)" />
               </div>
-            
+            </div>
             </div>
           
             <!-- If we need navigation buttons -->
@@ -432,10 +428,20 @@
               По номенклатуре профессий – это бесконтактный массаж по методу
               Джуны Давиташвили.
             </p>
-            <div class="document-image">
+            <div class="img-container">
+ <div class="document-image">
                <img src="./img/docs/сертификат кванты.jpeg" alt="" /> 
+              </div>
+              <div class="document-image">
             <img src="./img/docs/свидетельсво_кванты_корочки_с_тенью.png" alt="" />
             </div>
+            <div class="pop-up">
+              <span>&times;</span>
+              <img src="./img/docs/свидетельсво_кванты_корочки_с_тенью.png" alt="">
+            </div>
+
+            </div>
+           
            
           </div>
         </div>
@@ -483,7 +489,7 @@
               <div class="left-right-block">
                 <div class="block-left">
                  <p> Практика, погружающая <br>в ресурсное состояние. </p>
-<p>К ней которой может <br>
+<p>К которой может <br>
   присоединится любой <br>желающий.</p>
 <p>А также повторно все,<br> кто обучился ранее.</p>
                 </div>
@@ -515,8 +521,7 @@
               <div class="price_2-item">
                 <p>
             Полная стоимость: <br />
-          
-              <div class="decoration"><span >53 000</span> РУБ</div><br />
+              <span class="decoration">53 000</span> РУБ<br />
               <span>50 000</span> РУБ
            </p>    
               </div>
@@ -597,42 +602,53 @@
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide" >
-      <img  src="img/reviews/1.png" alt="Лицензия"  />
+      <img  src="img/reviews/17.png" alt="Отзыв"  />
     </div>
     <div class="swiper-slide"> 
-      <img src="img/reviews/2.png" alt="Лицензия"  />
+      <img src="img/reviews/18.png" alt="Отзыв"  />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/3.png" alt="Лицензия" />
+      <img src="img/reviews/19.png" alt="Отзыв" />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/4.png" alt="Лицензия"  />
+      <img src="img/reviews/20.png" alt="Отзыв"  />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/5.png" alt="Лицензия"  />
+      <img src="img/reviews/21.png" alt="Отзыв"  />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/10.png" alt="Лицензия"  />
+      <img src="img/reviews/22.png" alt="Отзыв"  />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/11.png" alt="Лицензия"  />
+      <img src="img/reviews/23.png" alt="Отзыв"  />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/12.png" alt="Лицензия"  />
+      <img src="img/reviews/24.png" alt="Отзыв"  />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/13.png" alt="Лицензия"  />
+      <img src="img/reviews/25.png" alt="Отзыв"  />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/14.png" alt="Лицензия"  />
+      <img src="img/reviews/26.png" alt="Отзыв"  />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/15.png" alt="Лицензия" />
+      <img src="img/reviews/27.png" alt="Отзыв" />
     </div>
     <div class="swiper-slide">
-      <img src="img/reviews/16.png" alt="Лицензия"  />
+      <img src="img/reviews/28.png" alt="Отзыв"  />
     </div>
-    
+    <div class="swiper-slide">
+      <img src="img/reviews/29.png" alt="Отзыв"  />
+    </div>
+    <div class="swiper-slide">
+      <img src="img/reviews/30.png" alt="Отзыв"  />
+    </div>
+    <div class="swiper-slide">
+      <img src="img/reviews/31.png" alt="Отзыв"  />
+    </div>
+    <div class="swiper-slide">
+      <img src="img/reviews/32.png" alt="Отзыв"  />
+    </div>    
   </div>
 
   <!-- If we need navigation buttons -->
@@ -695,11 +711,17 @@
       </section>
     </main>
     <footer class="footer">
-      <img src="./img/footer/name.svg" alt="" class="footer-name">
+      <img src="./img/footer/лого с гербом.png" alt="" class="footer-name">
       <button class="footer-btn pay"><a href="#course-price">Вернуться к ценам</a></button>
     
     </footer>
     <script>
+
+document.querySelectorAll('.img-container img').forEach(img => img.addEventListener('click',  () => {
+  document.querySelector('.pop-up').style.display = 'block'
+  document.querySelector('.pop-up img').src = img.getAttribute('src')
+}))
+
       var swiper = new Swiper('.mySwiper', {
         
       navigation: {

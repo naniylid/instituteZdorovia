@@ -1,156 +1,135 @@
-@media (max-width: 375px) {
+@media (max-width: 375px) and (max-width: 500px) {
   /* Первый лист */
   header {
-    height: 500px;
+    height: 480px;
     background-size: 220%;
+    background-color: white;
   }
 
   .header-logo {
     margin-top: 0.2%;
-    margin-left: 15%;
+    margin-left: 17%;
     width: 60%;
   }
 
+  .mobile-gradient {
+    margin-top: 10%;
+    height: 30%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgb(255, 255, 255) 100%
+    );
+  }
   .mobile-header {
-    background: linear-gradient(95deg, #285365, var(--main-color));
-    background-attachment: fixed;
-    /* box-shadow: 0 0 20px rgb(255, 255, 255); */
+    background: white;
   }
   .date {
-    margin-top: 55%;
-    margin-left: 58%;
-    width: 27%;
-    height: 4.5vw;
-    border: solid 0.065vw;
-    font-size: 2.4vw;
+    margin-top: -1%;
+    margin-left: 50%;
+    width: 35%;
+    height: 7vw;
+    border-radius: 10px;
+    padding-top: 1.5%;
+    font-size: 3.5vw;
   }
   .logo-text {
-    margin-top: 0.8%;
-    margin-left: 40.57%;
-    width: 50%;
-    height: 50%;
+    margin-top: 2%;
+    margin-left: 9.57%;
+    width: 85%;
   }
   .header-text {
-    margin-top: 2%;
-    margin-left: 41%;
-    font-family: 'Forum';
-    font-size: 1.3vw;
-    line-height: 1.627vw;
-    color: var(--dark-color);
+    width: 65%;
+    margin-top: 4%;
+    margin-left: 10%;
+    font-size: 2.9vw;
+    line-height: 3.627vw;
   }
 
   .headerbtn {
-    margin: 2% 0 10% 41%;
+    margin: 6% 0 10% 29%;
+    width: 40%;
+    height: 5.9vw;
+    border-radius: 10px;
+    font-size: 3.3vw;
   }
-  /* Кнопка */
-  .btn {
-    width: 20%;
-    height: 2.9vw;
-    border: solid 0.065vw;
-    border-color: var(--main-color);
-    background-color: var(--main-color);
-    border-radius: 1.953vw;
-
-    font-family: 'Forum';
-    font-size: 1.3vw;
-
-    color: white;
-  }
-
-  .btn:hover {
-    opacity: 0.7;
-  }
-
-  .headerbtn > a {
-    color: white;
-  }
-
   /* Второй лист */
-  .article {
-    background: var(--main-color);
-  }
   .article-title {
-    padding-top: 5.078vw;
-    margin-left: 25.182vw;
-    font-size: 2.929vw;
-    font-weight: 300;
-    color: #efeeea;
+    padding-top: 6.078vw;
+    margin-left: 11.182vw;
+    font-size: 5.929vw;
   }
   .article-text-block {
-    margin: 0.846vw 0 0 25.182vw;
-    font-size: 1.497vw;
-    color: #efeeea;
-    line-height: 1.562vw;
-    padding-bottom: 5.078vw;
+    width: 67%;
+    margin: 0.846vw 0 6.078vw 11.182vw;
+    font-size: 2.9vw;
+    line-height: 3.627vw;
+    padding-bottom: 6.078vw;
   }
 
   .article-text-block p {
-    padding-top: 2.278vw;
+    padding-top: 3.278vw;
   }
 
   /* Второй текстовый блок */
+  .text-item {
+    margin-top: -8%;
+    background: white;
+  }
   .first-item {
-    margin: 7.078vw 0 7.078vw 25.182vw;
-    line-height: 1.562vw;
-    font-size: 1.497vw;
-    color: var(--main-color);
+    width: 67%;
+    padding-top: 7.078vw;
+    margin-left: 11.182vw;
+    font-size: 2.9vw;
+    line-height: 3.627vw;
   }
 
   .first-item p {
-    padding-top: 1.302vw;
+    padding-top: 5.302vw;
   }
   /* Третий текстовый блок */
 
   .second-text-title {
-    padding-top: 5.078vw;
-    margin-left: 25.182vw;
-    color: var(--main-color);
-    font-size: 2.929vw;
+    padding-top: 3.078vw;
+    margin-left: 11.182vw;
+    font-size: 7.929vw;
   }
 
   .second-item {
+    width: 67%;
     padding-top: 5.125vw;
     padding-bottom: 5.078vw;
-    margin-left: 25.182vw;
-    font-size: 1.497vw;
-    color: var(--main-color);
+    margin-left: 11.182vw;
+    font-size: 2.9vw;
   }
   /* Что вы получите, пройдя курс? */
+  .course-information {
+    background-color: white;
+  }
   .course-info {
-    margin-left: 25.182vw;
+    margin-left: 11.182vw;
   }
   .course-info-title {
-    padding-top: 5.078vw;
-    padding-bottom: 3.125vw;
-    font-size: 2.929vw;
-    color: var(--dark-color);
+    width: 80%;
+    padding-bottom: 5.125vw;
+    font-size: 7.929vw;
   }
 
   .info-list {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 1.627vw;
-    row-gap: 1.627vw;
+    width: 90%;
+    column-gap: 2.627vw;
+    row-gap: 2.627vw;
     padding-bottom: 5.078vw;
   }
   .course-info-list-item {
-    padding-top: 0.5vw;
-    width: 16.974vw;
-    height: 11.974vw;
-    border-radius: 1.302vw;
-    background-color: #f3f5f7;
-    padding-left: 1.053vw;
+    width: 32.974vw;
+    height: 22.974vw;
+    border-radius: 10px;
+    padding-left: 3vw;
   }
 
   .course-info-list-item p {
-    padding-top: 0.1vw;
-    font-size: 1.302vw;
-    color: var(--dark-color);
-  }
-
-  .course-info-list-item img {
-    width: 33%;
+    font-size: 2.8vw;
   }
 
   /* Курс подойдет для всех */
@@ -158,67 +137,45 @@
     background: var(--main-color);
   }
   .course-audience-title {
-    padding-top: 5.078vw;
-    margin-left: 25.182vw;
-    color: white;
-    font-size: 2.929vw;
+    width: 60%;
+    margin-left: 11.182vw;
+    font-size: 7.929vw;
   }
   .audience-picture {
-    display: flex;
-    z-index: 1;
-    position: absolute;
-    margin-top: 6.161vw;
-    margin-left: 39.552vw;
-    width: 45.312vw;
-    height: 27.994vw;
+    margin-top: 93.161vw;
+    margin-left: 52.552vw;
   }
   .list {
-    position: relative;
-    z-index: 4;
     padding-top: 1.823vw;
-    padding-left: 28.786vw;
+    padding-left: 11.786vw;
   }
   .audience-list-item {
-    position: relative;
-    z-index: 4;
-    margin-top: 1.302vw;
-    width: 27.083vw;
-    min-height: 4.371vw;
-    border: solid 0.065vw;
-    border-color: var(--main-color);
-    background-color: #eaf5f9;
-    border-radius: 2.604vw;
-    padding: 0.651vw 0 0 1.702vw;
-    font-size: 1.302vw;
-    color: var(--dark-color);
+    margin-top: 2.302vw;
+    width: 66.083vw;
+    min-height: 9.371vw;
+    border-radius: 20px;
+    padding: 0.651vw 0 0 3.702vw;
+    font-size: 3vw;
   }
 
   .audience-list-item p {
-    padding-top: 0.7vw;
+    padding-top: 1.7vw;
   }
 
   .list-icon {
-    padding-top: 1.953vw;
-    position: absolute;
-    margin-top: -2.018vw;
-    margin-left: -5.184vw;
-    width: 7%;
+    display: none;
   }
   .audience-text {
-    margin: 3.125vw 0 0 25.531vw;
+    z-index: 4;
+    margin: 3.125vw 0 0 11.182vw;
     position: relative;
-    width: 39.062vw;
-    height: 8.463vw;
-    padding: 1.302vw 0 0 1.953vw;
-    border: solid 0.065vw;
-    border-color: var(--main-color);
-    background-color: #77b2c8;
-    border-radius: 2.604vw;
-    font-size: 1.302vw;
-    color: white;
+    width: 66.083vw;
+    height: 22.463vw;
+    padding: 2.302vw 0 0 1.953vw;
+    border-radius: 15px;
+    font-size: 3vw;
   }
   .audience-item {
-    color: var(--main-color);
     padding-bottom: 5.078vw;
   }
   /* Программа курса */

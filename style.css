@@ -94,6 +94,7 @@ header {
   color: #efeeea;
 }
 .article-text-block {
+  width: 50%;
   margin: 0.846vw 0 0 25.182vw;
   font-size: 1.497vw;
   color: #efeeea;
@@ -107,6 +108,7 @@ header {
 
 /* Второй текстовый блок */
 .first-item {
+  width: 50%;
   margin: 7.078vw 0 7.078vw 25.182vw;
   line-height: 1.562vw;
   font-size: 1.497vw;
@@ -126,6 +128,7 @@ header {
 }
 
 .second-item {
+  width: 50%;
   padding-top: 5.125vw;
   padding-bottom: 5.078vw;
   margin-left: 25.182vw;
@@ -195,6 +198,7 @@ header {
   padding-top: 1.823vw;
   padding-left: 28.786vw;
 }
+
 .audience-list-item {
   position: relative;
   z-index: 4;

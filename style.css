@@ -3,7 +3,7 @@
 
 *:root {
   --main-color: #477a8d;
-  --dark-color: #114b66;
+  --dark-color: #125369;
   --light-color: #a5c6cd;
 }
 body {
@@ -33,13 +33,13 @@ header {
   height: 2.5vw;
   padding-top: 0.5vw;
   border: solid 0.065vw;
-  border-color: var(--main-color);
+  border-color: var(--dark-color);
   border-radius: 1.953vw;
   text-align: center;
 
   font-family: 'Forum';
   font-size: 1.4vw;
-  color: var(--main-color);
+  color: var(--dark-color);
 }
 .logo-text {
   margin-top: 0.8%;
@@ -64,8 +64,8 @@ header {
   width: 20%;
   height: 2.9vw;
   border: solid 0.065vw;
-  border-color: var(--main-color);
-  background-color: var(--main-color);
+  border-color: var(--dark-color);
+  background-color: var(--dark-color);
   border-radius: 1.953vw;
 
   font-family: 'Forum';
@@ -84,7 +84,7 @@ header {
 
 /* Второй лист */
 .article {
-  background: var(--main-color);
+  background: var(--dark-color);
 }
 .article-title {
   padding-top: 5.078vw;
@@ -127,7 +127,7 @@ header {
   font-size: 2.929vw;
 }
 
-.second-item {
+.article-text-second p {
   width: 50%;
   padding-top: 5.125vw;
   padding-bottom: 5.078vw;
@@ -175,7 +175,7 @@ header {
 
 /* Курс подойдет для всех */
 .course-audience {
-  background: var(--main-color);
+  background: var(--dark-color);
 }
 .course-audience-title {
   padding-top: 5.078vw;
@@ -493,7 +493,7 @@ button svg {
 
 /* price block */
 .price-block {
-  background-color: var(--main-color);
+  background-color: var(--dark-color);
 }
 .price-block-title {
   padding: 5.078vw 0 3.255vw 20.531vw;

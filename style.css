@@ -564,17 +564,14 @@ button svg {
   margin-top: -3.19vw;
 }
 .price-block-item {
-  width: 39.0625vw;
-  margin-left: 20.833vw;
-  margin-top: 2.604vw;
   color: white;
   font-size: 1.497vw;
   line-height: 2.278vw;
 }
 
-.price_1 {
-  display: flex;
-  justify-content: space-between;
+.price_1 p {
+  margin-left: 20.833vw;
+  padding-top: 2.5vw;
 }
 
 .price_1 span {
@@ -582,11 +579,12 @@ button svg {
 }
 
 .price_2 {
-  width: 34.505vw;
-  margin-top: 2.604vw;
-  display: flex;
-  justify-content: space-between;
-  z-index: 5;
+  position: absolute;
+  margin-top: -17.474vw;
+  margin-left: 45vw;
+}
+.price_2-item {
+  padding-top: 2.5vw;
 }
 .price_2 span {
   font-size: 2.604vw;
@@ -637,12 +635,12 @@ button svg {
   margin-left: 0.651vw;
   width: 19.531vw;
   height: 23.893vw;
-  background: linear-gradient(95deg, #285365, var(--main-color));
+  background: linear-gradient(95deg, #183542, var(--dark-color));
   border-radius: 2.278vw;
 }
 .block-right_item {
-  border: 0.065vw solid #285365;
-  background-color: #285365;
+  border: 0.065vw solid #183542;
+  background-color: #183542;
   width: 19.401vw;
   height: 5.078vw;
   border-radius: 2.474vw;
@@ -676,13 +674,6 @@ button svg {
   margin-left: 7.8125vw;
 }
 
-.second-block-price {
-  position: absolute;
-  margin-left: 39.713vw;
-  margin-top: -15.364vw;
-  color: white;
-  font-size: 1.627vw;
-}
 /* Кнопки оплаты */
 .order {
   margin-left: 20.182vw;
@@ -792,6 +783,10 @@ button svg {
   width: 30%;
 }
 
+.swiper-slide > iframe {
+  width: 13.802vw;
+  height: 26.953vw;
+}
 /* Footer */
 .footer {
   background-color: var(--main-color);

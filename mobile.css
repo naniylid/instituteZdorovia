@@ -1,4 +1,10 @@
 @media (max-width: 500px) {
+  body {
+    background-color: white;
+
+    border: 1px solid red;
+    box-sizing: border-box;
+  }
   /* Первый лист */
   header {
     height: 800px;
@@ -136,6 +142,9 @@
   }
 
   /* Курс подойдет для всех */
+  .course-suitable {
+    overflow: hidden;
+  }
   .course-audience {
     padding-bottom: 34.078vw;
   }
@@ -145,9 +154,10 @@
     font-size: 7.929vw;
   }
   .audience-picture {
+    z-index: 1;
     margin-top: 110.161vw;
     margin-left: 25.552vw;
-    width: 100%;
+    max-width: 150%;
     height: 100%;
   }
   .list {
@@ -291,9 +301,9 @@
   .document-text {
     margin-bottom: 3.125vw;
     margin-left: 11.182vw;
-    width: 63%;
-    font-size: 3.5vw;
-    line-height: 3.627vw;
+    width: 70%;
+    font-size: 4.5vw;
+    line-height: 4.627vw;
   }
 
   .document-text p {

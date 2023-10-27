@@ -176,7 +176,7 @@
       </section>
       <section class="course-program">
         <h2 class="course-program-title">Программа курса</h2>
-        <article class="course-program-block">
+        <div class="course-program-block">
           <h3>
             <button aria-expanded="false">
               1. Квантовое строение мира
@@ -191,7 +191,6 @@
               Понять происходящее (объективно и субьективно) - процесс перехода
               в 5 мерность
             </p>
-
             <p>
               Принятие Себя, выравнивание биоструктур организма и нахождения
               своей точки равновесия или свечения.
@@ -289,7 +288,7 @@
               медициной, а наоборот, ее дополняет.
             </p>
           </div>
-        </article>
+        </div>
       </section>
       <section class="section block-space">
         <div class="space">
@@ -324,46 +323,42 @@
           <h2 class="course-possibilities-title">
             Что вы сможете после курса?
           </h2>
-          <ul>
+          <ul class="possibilities-item">
             <li class="possibilities-list">
-              <p class="number">1</p>
-              Уметь расслаблять клиентов, делать чувственными, повышая их энергопотенциал
+             <p>Уметь расслаблять клиентов, делать чувственными, повышая их энергопотенциал</p> 
             </li>
             <li class="possibilities-list">
-              <p class="number">2</p>
-              Быть востребованным специалистом, особенно сейчас, когда люди устают от стресса
+              <p>Не боятся поставленных Миром задач, успешно их решать</p>
+                </li>
+            <li class="possibilities-list">
+           <p>Быть востребованным специалистом, особенно сейчас, когда люди устают от стресса</p>   
             </li>
             <li class="possibilities-list">
-              <p class="number">3</p>
-              Быть на одной волне с клиентом, понимать его и помогать, не
-              присоединяясь к отрицательной энергии
+              <p>Управлять ситуацией, находить общий язык с начальством и коллегами</p>
+               </li>
+            <li class="possibilities-list">
+            <p>Быть на одной волне с клиентом, понимать его и помогать, не
+              присоединяясь к отрицательной энергии</p>
             </li>
             <li class="possibilities-list">
-              <p class="number">4</p>
-              Стать специалистом в области бесконтактного массажа (также уметь работать на расстоянии). Работать с фантомами
+              <p>Создавать свое поле любви, гармонии и комфорта</p>
+                 </li>
+            <li class="possibilities-list">
+            <p>Стать специалистом в области бесконтактного массажа (также уметь работать на расстоянии). Работать с фантомами
+            </p>
             </li>
             <li class="possibilities-list">
-              <p class="number">5</p>
-              Поймете, как успешно строить свою жизнь в радости и любви, с
-              денежным потоком
+            <p>Быть спокойным и сильным при тревожных обстоятельствах</p>
             </li>
             <li class="possibilities-list">
-              <p class="number">6</p>
-              Не боятся поставленных Миром задач, успешно их решать
-            </li>
-            <li class="possibilities-list">
-              <p class="number">7</p>
-              Управлять ситуацией, находить общий язык с начальством и коллегами
-            </li>
-            <li class="possibilities-list">
-              <p class="number">8</p>
-              Создавать поле любви и гармонии
-            </li>
-            <li class="possibilities-list">
-              <p class="number">9</p>
-              Быть спокойным и сильным при тревожных обстоятельствах
-            </li>
+              <p>Поймете, как успешно строить свою жизнь в радости и любви, с
+                 денежным потоком</p>
+                 
+               </li>
           </ul>
+          <div class="sphere">
+            <img src="./img/sphere.svg" alt="">
+          </div>
         </div>
       </section>
       <section class="section course-docs" >
@@ -427,8 +422,8 @@
               Джуны Давиташвили.
             </p>
             <div class="img-container">
- <div class="document-image first-doc">
-  <a id="zoom" href="./img/docs/сертификат кванты.jpeg"><img src="./img/docs/сертификат кванты.jpeg" alt=""/></a>
+                <div class="document-image first-doc">
+                  <a id="zoom" href="./img/docs/сертификат кванты.jpeg"><img src="./img/docs/сертификат кванты.jpeg" alt=""/></a>
               </div>
               <div class="document-image second-doc">
                 <a id="zoom" href="./img/docs/свидетельсво_кванты_корочки_с_тенью.png"><img src="./img/docs/свидетельсво_кванты_корочки_с_тенью.png" alt="" /></a>  
@@ -578,15 +573,15 @@
             <ul>
               <li class="reviews-list">
                 <h3 class="percent">94%</h3>
-                учеников довольны <br>обучением
+                учеников довольны обучением
               </li>
               <li class="reviews-list">
                 <h3 class="percent">81%</h3>
-                рекомендовали курс <br> друзьям
+                рекомендовали курс  друзьям
               </li>
               <li class="reviews-list">
                 <h3 class="percent">73%</h3>
-                получили ответ на <br>волнующий вопрос </li>
+                получили ответ на волнующий вопрос </li>
             </ul>
           </div>
        
@@ -699,9 +694,9 @@
               </div>
             </div>
 
-        </div>
-            </div>
-            
+         </div>
+            </div> 
+    
       </section>
     </main>
     <footer class="footer">
@@ -724,7 +719,7 @@
     
 function windowPlus() {
   const headings = document.querySelectorAll('h3');
-
+ 
   Array.prototype.forEach.call(headings, h => {
     let btn = h.querySelector('button');
     let target = h.nextElementSibling;

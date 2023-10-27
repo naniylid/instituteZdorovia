@@ -70,7 +70,7 @@ header {
   width: 20%;
   border-radius: 2.2vw;
   font-size: 1.8vw;
-  padding-bottom: 1vw;
+  padding-top: 0.2vw;
 }
 /* Кнопка */
 .btn {
@@ -195,8 +195,8 @@ header {
   padding: 0.651vw 0 0 1.902vw;
 }
 
-.audience-list-item:nth-child(3),
-:nth-child(4) {
+.audience-list li:nth-child(3),
+.audience-list li:nth-child(4) {
   height: 4.5vw;
   padding-top: 1vw;
 }
@@ -271,15 +271,14 @@ h3 button:focus svg {
 
 button svg {
   height: 1em;
-  font-size: 1.5vw;
   margin-left: 0.5em;
 }
 
 .program-text {
   padding: 3.125vw 0;
   color: var(--dark-color);
-  font-size: 1.202vw;
-  line-height: 1.627vw;
+  font-size: 1.602vw;
+  line-height: 1.927vw;
 }
 
 .program-text p {
@@ -287,12 +286,12 @@ button svg {
 }
 
 .program-video {
-  padding: 3.125vw 0 0 14.833vw;
+  padding: 3.125vw 0 0 19.833vw;
 }
 
 .program-video > iframe {
-  width: 50%;
-  height: 26.953vw;
+  width: 40%;
+  height: 29.953vw;
 }
 
 [aria-expanded='true'] .vert {
@@ -310,40 +309,43 @@ button svg {
   background-repeat: no-repeat;
   background-position: center;
   height: 85.9vw;
-
-  margin-top: 40.812vw;
+  margin-top: 3.812vw;
 }
 .space-block {
   position: absolute;
   border: 0.065vw solid var(--dark-color);
   background-color: white;
   border-radius: 2.278vw;
-  width: 51.848vw;
-  height: 47.317vw;
-  margin-left: 25.531vw;
+  width: 67.848vw;
+  height: 56vw;
+  margin-left: 16.531vw;
   margin-top: 16.276vw;
 }
 .space-block-title {
   padding: 5.078vw 0 0 3.906vw;
-  font-size: 2.604vw;
+  font-size: 3.604vw;
   color: var(--dark-color);
 }
 .space-block-text {
   padding-left: 3.906vw;
   width: 55.338vw;
   padding-top: 1.125vw;
-  font-size: 1.337vw;
-  line-height: 1.627vw;
+  font-size: 2.3vw;
+  line-height: 1.987vw;
   color: var(--dark-color);
 }
 .space-block-text p {
-  padding-top: 1.627vw;
+  padding-top: 2.3vw;
+  width: 105%;
 }
 
 .space-btn {
   width: 30%;
+  height: 4vw;
+  border-radius: 3vw;
   margin-left: 3.906vw;
   margin-top: 3.125vw;
+  font-size: 2vw;
 }
 
 .space-btn > a {
@@ -353,52 +355,58 @@ button svg {
 /* Что вы сможете после курса */
 .course-possibilities {
   margin-top: 5.859vw;
-  height: 75.359vw;
+  height: 85.359vw;
   background: var(--main-color);
 }
 .course-possibilities-title {
-  padding: 5.208vw 0 1.953vw 25.531vw;
-  font-size: 2.604vw;
-  color: white;
-}
-.possibilities-list {
-  margin-left: 7.161vw;
-  padding: 2.604vw 0 0 22.531vw;
-  font-size: 1.497vw;
-  width: 58.594vw;
+  padding: 5.208vw 0 3.953vw 16.182vw;
+  font-size: 3.604vw;
   color: white;
 }
 
-.number {
+.possibilities-item {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  column-gap: 1.627vw;
+  row-gap: 1.627vw;
+  margin-left: 11vw;
+}
+
+.possibilities-list {
+  border: 0.065vw solid white;
+  border-radius: 3vw;
+  width: 35vw;
+  height: min-content auto;
+}
+
+.possibilities-list p {
+  width: 90%;
+  padding: 1vw 0 1vw 2vw;
+  font-size: 1.997vw;
+  color: white;
+}
+
+.sphere {
+  width: 100%;
   position: absolute;
-  margin-left: -4.557vw;
-  padding-top: 0.195vw;
-  border: 0.065vw solid var(--main-color);
-  background: white;
-  color: var(--dark-color);
-  width: 1.953vw;
-  height: 1.953vw;
-  border-radius: 3.255vw;
-  font-size: 1.302vw;
-  text-align: center;
+  margin-left: 48%;
+  margin-top: -15%;
 }
 
 /* Лицензии */
-.documents-block {
-  height: 89.635vw;
-}
 .documents-block-title {
-  margin: 4.557vw 0 1.953vw 25.531vw;
-  font-size: 2.929vw;
+  margin: 4.557vw 0 1.953vw 16.182vw;
+  font-size: 3.929vw;
   color: var(--dark-color);
 }
 .document-text {
   margin-bottom: 3.125vw;
-  margin-left: 25.531vw;
-  width: 52.083vw;
-  font-size: 1.497vw;
+  margin-left: 16.182vw;
+  width: 62.083vw;
+  font-size: 1.997vw;
   color: var(--dark-color);
-  line-height: 1.627vw;
+  line-height: 1.927vw;
 }
 
 .document-text p {
@@ -426,7 +434,6 @@ button svg {
 }
 
 /* Slider */
-
 .swiper-slide {
   padding-left: 1.302vw;
   text-align: center;
@@ -447,7 +454,6 @@ button svg {
 
 .swiper {
   width: 25%;
-
   height: 20%;
   position: relative;
   overflow: hidden;
@@ -489,8 +495,8 @@ button svg {
   background-color: var(--dark-color);
 }
 .price-block-title {
-  padding: 5.078vw 0 3.255vw 20.531vw;
-  font-size: 3.645vw;
+  padding: 5.078vw 0 3.255vw 16.182vw;
+  font-size: 3.929vw;
   color: white;
 }
 .price-title {
@@ -503,7 +509,7 @@ button svg {
   width: 19.531vw;
   height: 30.599vw;
   border-radius: 2.278vw;
-  margin-left: 20.182vw;
+  margin-left: 16.182vw;
 }
 
 .first-block {
@@ -563,7 +569,7 @@ button svg {
 }
 
 .price_1 p {
-  margin-left: 20.833vw;
+  margin-left: 18.833vw;
   padding-top: 2.5vw;
 }
 
@@ -669,7 +675,7 @@ button svg {
 
 /* Кнопки оплаты */
 .order {
-  margin-left: 20.182vw;
+  margin-left: 17.182vw;
   margin-top: 3.255vw;
   display: flex;
 }
@@ -686,7 +692,7 @@ button svg {
 }
 .order-second button {
   margin-top: 1.302vw;
-  margin-left: 1.302vw;
+  margin-left: 5.302vw;
 }
 .pay {
   background-color: white;
@@ -709,7 +715,7 @@ button svg {
 } */
 
 .price-text {
-  margin: 4.557vw 0 0 20.182vw;
+  margin: 4.557vw 0 0 16.182vw;
   padding-bottom: 5.859vw;
   color: white;
   font-size: 1.627vw;
@@ -717,51 +723,50 @@ button svg {
 
 /* finish list */
 .finish-block-title {
-  margin: 4.557vw 0 0 25.531vw;
-  font-size: 2.929vw;
+  margin: 4.557vw 0 0 16.182vw;
+  font-size: 3.929vw;
   color: var(--dark-color);
 }
 .finish-list {
-  margin-left: 23.531vw;
-  font-size: 1.302vw;
+  margin-left: 15.531vw;
+  font-size: 1.902vw;
   color: var(--dark-color);
-  padding: 1.302vw 1.302vw;
 }
 .finish-list li {
-  margin-top: 2.153vw;
-  height: 2.604vw;
+  margin-top: 1.853vw;
+  height: min-content;
+  width: 50%;
 }
 
 .finish-list-item {
   background: url(./img/Star\ 12.svg) no-repeat center left;
-  background-size: 2.8%;
+  background-size: 5.8%;
   padding-left: 4.557vw;
   padding-top: 0.651vw;
 }
 
 .reviews ul {
-  width: 69.526vw;
-  margin: 7.955vw 0 0 10.997vw;
+  width: 66.526vw;
+  margin: 8.955vw 0 0 14.997vw;
   display: flex;
   justify-content: space-between;
   color: var(--main-color);
-  font-size: 1.302vw;
+  font-size: 1.902vw;
 }
 .reviews-list {
-  margin-left: 10.531vw;
   text-align: center;
-  width: 13.021vw;
+  width: 17.021vw;
 }
 .percent {
-  font-size: 3.255vw;
+  font-size: 4.255vw;
   margin-bottom: 1.302vw;
 }
 
 /* Slider 2 */
 .reviews-swiper > .swiper {
-  width: 30%;
+  width: 50%;
   margin-top: 1.125vw;
-  padding-left: 1.053vw;
+  padding-left: 5.053vw;
 
   position: relative;
   overflow: hidden;
@@ -770,10 +775,9 @@ button svg {
 }
 
 /* Slider 3 */
-
 .slider_3 {
   margin: 3.125vw 0 5.078vw 0;
-  width: 30%;
+  width: 100%;
 }
 
 .swiper-slide > iframe {

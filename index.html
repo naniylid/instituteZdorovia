@@ -356,7 +356,7 @@
                  
                </li>
           </ul>
-          <div class="sphere">
+          <div class="course-sphere">
             <img src="./img/sphere.svg" alt="">
           </div>
         </div>
@@ -478,9 +478,9 @@
               <div class="left-right-block">
                 <div class="block-left">
                  <p> Практика, погружающая <br>в ресурсное состояние. </p>
-<p>К которой может <br>
-  присоединится любой <br>желающий.</p>
-<p>А также повторно все,<br> кто обучился ранее.</p>
+                <p>К которой может <br>
+                  присоединится любой <br>желающий.</p>
+                <p>А также повторно все,<br> кто обучился ранее.</p>
                 </div>
                 <div class="block-right">
                   <div class="block-right_item"><p>2 ПО ЦЕНЕ 1</p></div>
@@ -525,11 +525,13 @@
          
           <div class="order">
             <div class="order-first">
-              <button class="pay btn">Оплатить участие</button>
+             <a href="#window"><button class="pay btn">Оплатить участие</button></a>
               <!-- <button class="install btn">Купить в рассрочку</button> -->
             </div>
             <div class="order-second">
-              <button class="pay btn">Оплатить участие</button>
+              <a href="#window">
+                <button class="pay btn">Оплатить участие</button>
+              </a>
               <!-- <button class="install btn">Купить в рассрочку</button> -->
             </div>
           </div>
@@ -704,7 +706,35 @@
       <button class="footer-btn pay"><a href="#course-price">Вернуться к ценам</a></button>
     
     </footer>
+  <!-- Всплывающее окно для оплаты -->
+    <div id="window" class="window">
+      <a href="#header" class="window_area"></a>
+     <div class="window_body">
+      <div class="window_content">
+    <a href="#header" class="window_close"><img src="./img/social-media/close.svg" alt=""></a>
+    <div class="window_title">Совершить скачок в своем развитии и <br> прокачать свое сознание на новый уровнь!</div>
+    <div class="window_text">
+      <a href="#">
+      <div class="window-social">
+        <img src="./img/social-media/whatsapp.svg" alt="">
+        <p>ОСТАВИТЬ ЗАЯВКУ В WHATSAPP</p>
+      </div></a>
+      <a href="https://vk.com/marina.shalashova">
+      <div class="window-social">
+        <img src="./img/social-media/vk.svg" alt="">
+        <p>ОСТАВИТЬ ЗАЯВКУ ВКОНТАКТЕ</p>
+      </div></a>
+      <a href="https://t.me/olesya_ssh">
+      <div class="window-social">
+      <img src="./img/social-media/telegram.svg" alt="">
+      <p>ОСТАВИТЬ ЗАЯВКУ В ТЕЛЕГРАМ</p>
+      </div></a>
+    </div>
+  </div>
+</div>
+    </div>
     <script>
+    //Слайдер
       var swiper = new Swiper('.mySwiper', {
       navigation: {
         nextEl: '.swiper-button-next',
@@ -716,7 +746,8 @@
   },
       
     });
-    
+
+    //Блок Программа курса, всплывающий текст через +
 function windowPlus() {
   const headings = document.querySelectorAll('h3');
  
@@ -732,7 +763,6 @@ function windowPlus() {
     };
   });
 }
-
 windowPlus();
     </script>
     <script src="./script.js"></script>

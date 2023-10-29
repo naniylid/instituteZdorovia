@@ -387,11 +387,11 @@ button svg {
   color: white;
 }
 
-.sphere {
-  width: 100%;
+.course-sphere img {
+  width: 35%;
   position: absolute;
-  margin-left: 48%;
-  margin-top: -15%;
+  margin-left: 43%;
+  margin-top: -15.5%;
 }
 
 /* Лицензии */
@@ -424,18 +424,19 @@ button svg {
   height: 19.531vw;
   cursor: pointer;
 }
-.first-doc {
-  width: 37%;
+.first-doc img {
+  width: 65%;
 }
-.second-doc {
-  width: 90%;
-  margin-left: 1.953vw;
-  padding-top: 2.2vw;
+.second-doc img {
+  position: absolute;
+  width: 45%;
+  margin-left: -6vw;
+  padding-top: -1vw;
 }
 
 /* Slider */
 .swiper-slide {
-  padding-left: 1.302vw;
+  padding-left: 2.302vw;
   text-align: center;
   background: #fff;
   display: flex;
@@ -445,16 +446,14 @@ button svg {
 
 .swiper-slide img {
   display: block;
-  width: 70%;
+  width: 65%;
   height: 40%;
   position: relative;
-
-  transition: transform 0.2s;
 }
 
 .swiper {
-  width: 25%;
-  height: 20%;
+  width: 35%;
+  height: max-content;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
@@ -465,10 +464,6 @@ button svg {
   margin-left: 1.627vw;
   position: absolute;
   top: 0;
-}
-.swiper-slide img {
-  width: 75%;
-  margin-left: 1.953vw;
 }
 
 .swiper-button-prev::after,
@@ -692,7 +687,7 @@ button svg {
 }
 .order-second button {
   margin-top: 1.302vw;
-  margin-left: 5.302vw;
+  margin-left: 7.302vw;
 }
 .pay {
   background-color: white;
@@ -715,7 +710,7 @@ button svg {
 } */
 
 .price-text {
-  margin: 4.557vw 0 0 16.182vw;
+  margin: 7.557vw 0 0 16.182vw;
   padding-bottom: 5.859vw;
   color: white;
   font-size: 1.627vw;
@@ -813,4 +808,87 @@ button svg {
   margin-top: 32.552;
   margin-left: -33%;
   width: 50%;
+}
+
+/*Всплавыющее окно оплаты*/
+.window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  z-index: 5;
+}
+
+.window:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.window:target .window_content {
+  transform: perspective(1000px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+.window_area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.window_body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.953vw 0.651vw;
+}
+.window_content {
+  background-color: white;
+  color: black;
+  width: 50vw;
+  height: 30vw;
+  padding: 30px;
+  opacity: 0;
+  border-radius: 1vw;
+  transform: translate(0px, -100%);
+  transition: all 0.8s ease 0s;
+}
+.window_close > img {
+  position: absolute;
+  right: 2vw;
+  top: 1vw;
+  width: 2vw;
+}
+.window_title {
+  font-size: 2vw;
+  text-align: center;
+  color: var(--dark-color);
+  margin: 3vw 0;
+}
+
+.window-social {
+  margin: 0 0 1vw 10vw;
+
+  width: 55%;
+  height: 4vw;
+  background-color: #f3f5f7;
+  border-radius: 1vw;
+  display: flex;
+}
+
+.window-social img {
+  width: 14.5%;
+}
+
+.window-social p {
+  font-size: 1.2vw;
+  color: var(--dark-color);
+  margin: 1.2vw 3vw;
 }

@@ -168,7 +168,7 @@ header {
 
 /* Курс подойдет для всех */
 .course-audience {
-  background: var(--dark-color);
+  background: var(--main-color);
 }
 .course-audience-title {
   padding-top: 5.078vw;
@@ -230,9 +230,16 @@ header {
   color: white;
   width: 95%;
 }
-.audience-item {
+.audience-btn {
+  margin: 3vw 0 4vw 34vw;
+  background-color: white;
+  border-radius: 3vw;
+  width: 27%;
+  height: 5vw;
+  font-size: 2vw;
+}
+.audience-btn a {
   color: var(--dark-color);
-  padding-bottom: 5.078vw;
 }
 /* Программа курса */
 .course-program-title {
@@ -252,26 +259,21 @@ header {
 
 .course-program-block h3 {
   border-top: 0.1vw solid var(--dark-color);
-}
-
-h3 button {
-  border: 0;
   display: flex;
   justify-content: space-between;
   height: 7.078vw;
-  padding: 2.953vw 0;
+  width: 63.385vw;
+}
+
+h3 p {
+  padding: 2.453vw 2vw;
   color: var(--dark-color);
-  width: 59.385vw;
   font-size: 1.902vw;
 }
 
-h3 button:focus svg {
-  outline: 0.065vw solid var(--dark-color);
-}
-
-button svg {
-  height: 1em;
-  margin-left: 0.5em;
+h3 button {
+  font-size: 4vw;
+  margin-right: 3vw;
 }
 
 .program-text {
@@ -292,14 +294,6 @@ button svg {
 .program-video > iframe {
   width: 40%;
   height: 29.953vw;
-}
-
-[aria-expanded='true'] .vert {
-  display: none;
-}
-
-[aria-expanded] rect {
-  fill: currentColor;
 }
 
 /* Суфийское пространство */
@@ -355,7 +349,7 @@ button svg {
 /* Что вы сможете после курса */
 .course-possibilities {
   margin-top: 5.859vw;
-  height: 85.359vw;
+  height: 92.359vw;
   background: var(--main-color);
 }
 .course-possibilities-title {
@@ -394,6 +388,18 @@ button svg {
   margin-top: -15.5%;
 }
 
+.posibil-btn {
+  margin: 12vw 0 4vw 34vw;
+  background-color: white;
+  border-radius: 3vw;
+  width: 27%;
+  height: 5vw;
+  font-size: 2vw;
+}
+.posibil-btn a {
+  color: var(--dark-color);
+}
+
 /* Лицензии */
 .documents-block-title {
   margin: 4.557vw 0 1.953vw 16.182vw;
@@ -419,18 +425,14 @@ button svg {
 .document-image {
   margin-top: 3.125vw;
   margin-bottom: 5.078vw;
-  display: flex;
-  justify-content: space-between;
-  height: 19.531vw;
   cursor: pointer;
 }
 .first-doc img {
-  width: 65%;
+  width: 70%;
 }
 .second-doc img {
-  position: absolute;
-  width: 45%;
-  margin-left: -6vw;
+  width: 100%;
+  margin-left: -10%;
   padding-top: -1vw;
 }
 
@@ -487,7 +489,7 @@ button svg {
 
 /* price block */
 .price-block {
-  background-color: var(--dark-color);
+  background-color: var(--main-color);
 }
 .price-block-title {
   padding: 5.078vw 0 3.255vw 16.182vw;
@@ -629,12 +631,12 @@ button svg {
   margin-left: 0.651vw;
   width: 19.531vw;
   height: 23.893vw;
-  background: linear-gradient(95deg, #183542, var(--dark-color));
+  background: linear-gradient(95deg, #285365, var(--main-color));
   border-radius: 2.278vw;
 }
 .block-right_item {
-  border: 0.065vw solid #183542;
-  background-color: #183542;
+  border: 0.065vw solid #285365;
+  background-color: #285365;
   width: 19.401vw;
   height: 5.078vw;
   border-radius: 2.474vw;

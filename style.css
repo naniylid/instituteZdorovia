@@ -15,7 +15,7 @@ body {
 /* Первый лист */
 header {
   height: max-content;
-  background-image: url(./img/header-photo.png);
+  background-image: url(./img/header-back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -32,22 +32,9 @@ header {
   margin-top: 10%;
   font-size: 1.5vw;
   color: var(--main-color);
-}
-.first-place {
-  width: 57%;
   display: flex;
   justify-content: space-between;
-}
-
-.second-place {
-  margin-top: 0.2vw;
-  width: 75.5%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.second-place > .item-between {
-  margin-right: 1.5%;
+  width: 25%;
 }
 
 .logo-text {
@@ -252,7 +239,7 @@ header {
 .course-program-block {
   border-style: solid;
   border-style: none;
-  border-bottom: 0.1vw solid var(--dark-color);
+  border-bottom: 0.1vw solid var(--main-color);
   margin-left: 16.531vw;
   width: 65.062vw;
 }
@@ -607,9 +594,14 @@ h3 button {
   color: white;
   font-size: 1.497vw;
 }
-.price-block_2 img {
-  margin: -2.799vw 0 0.976vw 3.255vw;
-  width: 29.297vw;
+.second-block_1 h2 {
+  font-size: 2vw;
+  color: white;
+  margin: -2.5vw 0 0vw 6.255vw;
+}
+.second-block_1 h2 span {
+  font-family: 'Young Love ES';
+  font-size: 5vw;
 }
 .second-block_1 {
   margin-top: 2.539vw;
@@ -632,6 +624,7 @@ h3 button {
 }
 
 .block-right {
+  margin-top: -0.5vw;
   margin-left: 0.651vw;
   width: 19.531vw;
   height: 23.893vw;

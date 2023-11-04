@@ -15,26 +15,26 @@ body {
 /* Первый лист */
 header {
   height: max-content;
-  background-image: url(./img/header-back.jpg);
+  background-image: url(./img/header-back\ 2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .header-logo {
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 35%;
   align-items: center;
   width: 30%;
 }
 
 .course-date {
-  margin-left: 65%;
-  margin-top: 10%;
+  margin-left: 68%;
+  margin-top: 7%;
   font-size: 1.5vw;
   color: var(--main-color);
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 23%;
 }
 
 .logo-text {
@@ -87,7 +87,7 @@ header {
 }
 .article-text-block {
   width: 60%;
-  margin: 3vw 0 0 16.182vw;
+  margin: 1vw 0 0 16.182vw;
   font-size: 1.997vw;
   line-height: 1.962vw;
   padding-bottom: 5.078vw;
@@ -173,23 +173,24 @@ header {
   position: relative;
   z-index: 4;
   margin-top: 1.302vw;
-  width: 55.083vw;
-  height: 5.671vw;
+  width: 45.083vw;
+  height: 5.971vw;
   border: solid 0.065vw;
   border-color: var(--main-color);
-  background-color: #eaf5f9;
+  background-color: white;
   border-radius: 2.304vw;
-  padding: 0.651vw 0 0 1.902vw;
+  padding: 0.951vw 0 0 2.3vw;
 }
 
 .audience-list li:nth-child(3),
-.audience-list li:nth-child(4) {
+.audience-list li:nth-child(4),
+.audience-list li:nth-child(2) {
   height: 4.5vw;
   padding-top: 1vw;
 }
 
 .audience-list-item p {
-  width: 65%;
+  width: 90%;
   font-size: 1.902vw;
   color: var(--dark-color);
 }
@@ -199,13 +200,13 @@ header {
   position: absolute;
   margin-top: -2.018vw;
   margin-left: -7.184vw;
-  width: 4%;
+  width: 5%;
 }
 .audience-text {
-  margin: 3.125vw 0 0 16.182vw;
+  margin: 3.125vw 0 0 18.182vw;
   position: relative;
-  width: 65.062vw;
-  height: 9.463vw;
+  width: 55.062vw;
+  height: 11vw;
   padding: 1.302vw 0 0 3vw;
   border: solid 0.065vw;
   border-color: var(--main-color);
@@ -249,21 +250,25 @@ header {
   display: flex;
   justify-content: space-between;
   height: 7.078vw;
-  width: 63.385vw;
+  width: 65.062vw;
 }
 
 h3 p {
   padding: 2.453vw 2vw;
   color: var(--dark-color);
-  font-size: 1.902vw;
+  font-size: 1.997vw;
 }
 
 h3 button {
+  color: #285365;
   font-size: 4vw;
   margin-right: 3vw;
 }
 
 .program-text {
+  width: 90%;
+  margin-top: -4vw;
+  margin-left: 2vw;
   padding: 3.125vw 0;
   color: var(--dark-color);
   font-size: 1.602vw;
@@ -290,16 +295,16 @@ h3 button {
   background-repeat: no-repeat;
   background-position: center;
   height: 85.9vw;
-  margin-top: 3.812vw;
+  margin-top: 4.812vw;
 }
 .space-block {
   position: absolute;
   border: 0.065vw solid var(--dark-color);
   background-color: white;
   border-radius: 2.278vw;
-  width: 67.848vw;
-  height: 56vw;
-  margin-left: 16.531vw;
+  width: 53.848vw;
+  height: 54vw;
+  margin-left: 21.531vw;
   margin-top: 16.276vw;
 }
 .space-block-title {
@@ -311,21 +316,21 @@ h3 button {
   padding-left: 3.906vw;
   width: 55.338vw;
   padding-top: 1.125vw;
-  font-size: 2.3vw;
+  font-size: 1.997vw;
   line-height: 1.987vw;
   color: var(--dark-color);
 }
 .space-block-text p {
   padding-top: 2.3vw;
-  width: 105%;
+  width: 90%;
 }
 
 .space-btn {
-  width: 30%;
+  width: 35%;
   height: 4vw;
   border-radius: 3vw;
   margin-left: 3.906vw;
-  margin-top: 3.125vw;
+  margin-top: 4.125vw;
   font-size: 2vw;
 }
 
@@ -347,24 +352,29 @@ h3 button {
 
 .possibilities-item {
   display: flex;
-  width: 100%;
+  width: 90%;
   flex-wrap: wrap;
   column-gap: 1.627vw;
   row-gap: 1.627vw;
-  margin-left: 11vw;
+  margin-left: 16vw;
 }
 
 .possibilities-list {
   border: 0.065vw solid white;
-  border-radius: 3vw;
-  width: 35vw;
-  height: min-content auto;
+  border-radius: 2vw;
+  width: 32vw;
+  height: max-content;
 }
-
+.possibilities-list:nth-child(2) {
+  height: 6vw;
+}
+.possibilities-list:nth-child(4) {
+  margin-top: -2.3vw;
+}
 .possibilities-list p {
-  width: 90%;
+  width: 89%;
   padding: 1vw 0 1vw 2vw;
-  font-size: 1.997vw;
+  font-size: 1.797vw;
   color: white;
 }
 
@@ -423,8 +433,9 @@ h3 button {
 }
 
 .second-doc img {
+  margin-top: -19%;
   margin-left: 7%;
-  width: 150%;
+  width: 100%;
 }
 
 /* Slider */
@@ -558,7 +569,7 @@ h3 button {
 
 .price_1 p {
   margin-left: 18.833vw;
-  padding-top: 2.5vw;
+  padding-top: 1.5vw;
 }
 
 .price_1 span {
@@ -567,11 +578,11 @@ h3 button {
 
 .price_2 {
   position: absolute;
-  margin-top: -17.474vw;
+  margin-top: -15.5vw;
   margin-left: 45vw;
 }
 .price_2-item {
-  padding-top: 2.5vw;
+  padding-top: 1.5vw;
 }
 .price_2 span {
   font-size: 2.604vw;
@@ -670,7 +681,7 @@ h3 button {
 /* Кнопки оплаты */
 .order {
   margin-left: 17.182vw;
-  margin-top: 3.255vw;
+  margin-top: 1.255vw;
   display: flex;
 }
 
@@ -709,7 +720,7 @@ h3 button {
 } */
 
 .price-text {
-  margin: 7.557vw 0 0 16.182vw;
+  margin: 3.557vw 0 0 16.182vw;
   padding-bottom: 5.859vw;
   color: white;
   font-size: 1.627vw;
@@ -722,7 +733,7 @@ h3 button {
   color: var(--dark-color);
 }
 .finish-list {
-  margin-left: 15.531vw;
+  margin-left: 16.531vw;
   font-size: 1.902vw;
   color: var(--dark-color);
 }
@@ -739,6 +750,48 @@ h3 button {
   padding-top: 0.651vw;
 }
 
+/* Блок про автора курса */
+.about-author {
+  font-size: 1.997vw;
+  color: var(--dark-color);
+  margin-left: 16.182vw;
+  margin-top: 10vw;
+}
+.author-visible-info {
+  display: flex;
+}
+.author-visible-info img {
+  width: 60%;
+}
+.visible-text {
+  width: 65%;
+  margin-left: 2vw;
+  margin-bottom: 2vw;
+}
+.read-more p {
+  width: 17%;
+  margin-left: 2vw;
+  margin-top: 3vw;
+  color: var(--main-color);
+  border-bottom: 0.12vw solid var(--main-color);
+  padding-bottom: -0.1vw;
+}
+.open-text {
+  margin-top: 3vw;
+  width: 75%;
+}
+
+.open-text p {
+  padding-bottom: 3vw;
+}
+
+.hide-text {
+  color: var(--main-color);
+  border-bottom: 0.12vw solid var(--main-color);
+  padding-bottom: -0.1vw;
+}
+
+/* Оценка в процентах */
 .reviews ul {
   width: 66.526vw;
   margin: 8.955vw 0 0 14.997vw;
@@ -791,7 +844,7 @@ h3 button {
 .footer-btn {
   width: 15%;
   height: 4vw;
-  margin-left: -17.8%;
+  margin-left: -17.5%;
   margin-top: 25%;
   font-size: 1.497vw;
   transition: 0.2s;
@@ -910,7 +963,6 @@ h3 button {
   left: 50%;
   width: max-content;
   transform: translate(-50%, -50%);
-  border: 0.5vw solid white;
 }
 
 #zoom .popup span {

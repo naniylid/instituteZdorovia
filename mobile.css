@@ -10,6 +10,7 @@
   /* Первый лист */
   header {
     height: 900px;
+    /* background-image: url(./img/header-back.jpg); */
     background-size: 230vw;
     background-color: white;
   }
@@ -50,7 +51,7 @@
   }
   .header-text {
     width: 80%;
-    margin-top: 3%;
+    margin-top: 7%;
     margin-left: 10%;
     font-size: 4.5vw;
     line-height: 5vw;
@@ -69,6 +70,7 @@
     margin-left: 10%;
     margin-top: 20%;
     font-size: 8vw;
+    line-height: 7vw;
     width: 70%;
   }
   .article-text-block {
@@ -88,6 +90,7 @@
     padding-top: 10%;
     margin-left: 10%;
     font-size: 8vw;
+    line-height: 7vw;
     width: 50%;
   }
 
@@ -124,21 +127,21 @@
     margin-bottom: 8.078vw;
   }
   .course-info-list-item {
-    width: 32.974vw;
-    height: 22.974vw;
-    border-radius: 3vh;
-    padding-left: 3vw;
+    width: 37.974vw;
+    height: 25.974vw;
+    border-radius: 2vh;
+    padding-left: 4vw;
   }
 
   .course-info-list-item p {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .course-info-list-item img {
     width: 30%;
   }
   .course-info-list-item:nth-child(4) {
-    width: 32.974vw;
-    height: 22.974vw;
+    width: 37.974vw;
+    height: 25.974vw;
   }
 
   /* Курс подойдет для всех */
@@ -163,8 +166,8 @@
     margin-top: 2.302vw;
     width: 81.083vw;
     min-height: 15vw;
-    border-radius: 20vh;
-    padding: 2.5vw 0 2vw 6.702vw;
+    border-radius: 3vh;
+    padding: 2.5vw 0 2vw 7.702vw;
   }
 
   .audience-list-item:first-child {
@@ -173,7 +176,8 @@
   }
 
   .audience-list li:nth-child(3),
-  .audience-list li:nth-child(4) {
+  .audience-list li:nth-child(4),
+  .audience-list li:nth-child(2) {
     padding-top: 2vw;
   }
 
@@ -188,9 +192,9 @@
   .audience-text {
     margin: 3.125vw 0 0 11.182vw;
     width: 81.083vw;
-    height: 43.463vw;
-    padding: 5.302vw 0 0 7.953vw;
-    border-radius: 5vh;
+    height: 40.463vw;
+    padding: 4.302vw 0 0 7.953vw;
+    border-radius: 4vh;
   }
   .audience-text p {
     width: 95%;
@@ -198,7 +202,7 @@
   }
 
   .audience-btn {
-    margin: 15vw 21vw 0;
+    margin: 12vw 21vw 0;
     width: 60%;
     height: 9.9vw;
     border-radius: 10vh;
@@ -255,9 +259,9 @@
   }
   .space-block {
     border-radius: 5vh;
-    width: 74.848vw;
-    height: 140.317vw;
-    margin-left: 12.531vw;
+    width: 76.848vw;
+    height: 133.317vw;
+    margin-left: 10.531vw;
     margin-top: 14.276vw;
   }
   .space-block-title {
@@ -276,8 +280,8 @@
   }
 
   .space-btn {
-    width: 55%;
-    height: 8vw;
+    width: 60%;
+    height: 9.9vw;
     border-radius: 10vh;
     margin-left: 4.906vw;
     margin-top: 6.125vw;

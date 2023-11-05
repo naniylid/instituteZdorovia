@@ -4,13 +4,12 @@
   }
   body {
     background-color: white;
-
     box-sizing: border-box;
   }
   /* Первый лист */
   header {
     height: 900px;
-    /* background-image: url(./img/header-back.jpg); */
+    background-image: url(./img/header-back.jpg);
     background-size: 230vw;
     background-color: white;
   }
@@ -22,8 +21,8 @@
   }
 
   .mobile-gradient {
-    margin-top: 11%;
-    height: 46%;
+    margin-top: 40%;
+    height: 30%;
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 0%,
@@ -118,6 +117,7 @@
     width: 80%;
     padding-bottom: 5.125vw;
     font-size: 8vw;
+    line-height: 7vw;
   }
 
   .info-list {
@@ -148,14 +148,13 @@
   .course-suitable {
     overflow-x: hidden;
   }
-  .course-audience {
-    padding-bottom: 34.078vw;
-  }
+
   .course-audience-title {
     width: 60%;
     margin-left: 10%;
     padding-top: 15%;
     font-size: 8vw;
+    line-height: 7vw;
   }
 
   .list {
@@ -165,20 +164,9 @@
   .audience-list-item {
     margin-top: 2.302vw;
     width: 81.083vw;
-    min-height: 15vw;
-    border-radius: 3vh;
-    padding: 2.5vw 0 2vw 7.702vw;
-  }
-
-  .audience-list-item:first-child {
-    height: 20vw;
-    border-radius: 5vh;
-  }
-
-  .audience-list li:nth-child(3),
-  .audience-list li:nth-child(4),
-  .audience-list li:nth-child(2) {
-    padding-top: 2vw;
+    height: 15vw !important;
+    border-radius: 2.5vh;
+    padding: 2vw 0 2vw 7.702vw !important;
   }
 
   .audience-list-item p {
@@ -202,7 +190,7 @@
   }
 
   .audience-btn {
-    margin: 12vw 21vw 0;
+    margin: 12vw 0 15% 21vw;
     width: 60%;
     height: 9.9vw;
     border-radius: 10vh;
@@ -249,18 +237,28 @@
   .program-video > iframe {
     height: 50.953vw;
   }
+  .arrow-items {
+    margin-left: 60%;
+  }
+  .arrow-items p {
+    margin-top: 3%;
+    font-size: 4vw;
+  }
+  .arrow-items img {
+    width: 10%;
+  }
 
   /* Суфийское пространство */
   .space {
     background-position: top;
     background-size: 92vh;
-    height: 170.9vw;
+    height: 195.9vw;
     margin-top: 8.812vw;
   }
   .space-block {
     border-radius: 5vh;
     width: 76.848vw;
-    height: 133.317vw;
+    height: 140.317vw;
     margin-left: 10.531vw;
     margin-top: 14.276vw;
   }
@@ -291,18 +289,20 @@
   /* Что вы сможете после курса */
   .course-possibilities {
     margin-top: 5.859vw;
-    height: 150vh;
+    height: 140vh;
   }
   .course-possibilities-title {
-    padding: 6vw 0 10vw 10%;
+    padding: 10vw 0 7vw 10%;
     font-size: 8vw;
+    line-height: 7vw;
     width: 70%;
   }
   .possibilities-list {
-    margin-top: 1vw;
-    margin-left: -2%;
+    margin-bottom: 2vw;
+    margin-left: -4%;
     width: 75%;
-    border-radius: 4vh;
+    height: max-content !important;
+    border-radius: 3vh;
   }
 
   .possibilities-list p {
@@ -310,17 +310,27 @@
     padding: 2vw 0 2vw 5vw;
     font-size: 4.5vw;
   }
+  .possibilities-list:nth-child(2),
+  .possibilities-list:nth-child(4),
+  .possibilities-list:nth-child(8) {
+    margin-top: 0;
+  }
+
+  .possibilities-list:nth-child(6) {
+    margin-top: 0;
+    border-radius: 2.5vh;
+  }
 
   .course-sphere img {
     width: 70%;
     position: absolute;
-    margin-left: 30%;
-    margin-top: 6.5%;
+    margin-left: 28%;
+    margin-top: 15.5%;
   }
 
   .posibil-btn {
     width: 55%;
-    height: 8vw;
+    height: 9.9vw;
     border-radius: 10vh;
     margin-left: 19vw;
     margin-top: 8.125vw;
@@ -329,11 +339,12 @@
 
   /* Лицензии */
   .documents-block {
-    height: 200vh;
+    height: 158vh;
   }
   .documents-block-title {
-    margin: 6.557vw 0 1.953vw 10%;
+    margin: 13.557vw 0 1.953vw 10%;
     font-size: 8vw;
+    line-height: 7vw;
   }
   .document-text {
     margin-bottom: 3.125vw;
@@ -353,7 +364,6 @@
   }
   .document-image {
     margin-top: 5.125vw;
-    margin-bottom: 5.078vw;
   }
   .first-doc {
     width: 70%;
@@ -361,7 +371,7 @@
   }
   .second-doc {
     position: absolute;
-    width: 40vh;
+    width: 33vh;
     margin-left: -6vw;
     margin-top: 90vw;
   }
@@ -384,10 +394,10 @@
 
   /* price block */
   .price-block {
-    height: 200vh;
+    height: 160vh;
   }
   .price-block-title {
-    padding: 19.078vw 0 16vw 10%;
+    padding: 17.078vw 0 9vw 10%;
     font-size: 8vw;
   }
   .price-title {
@@ -441,22 +451,10 @@
   .present p {
     font-size: 4.5vw;
     margin-left: 9.557vw;
-    margin-top: -8.39vw;
-  }
-  .price-block-item {
-    font-size: 4.5vw;
-    line-height: 6.578vw;
+    margin-top: -8.7vw;
   }
 
-  .price_1 p {
-    margin-left: 27.833vw;
-    padding-top: 2.5vw;
-  }
-
-  .price_1 span {
-    font-size: 7.604vw;
-  }
-
+  /* Второй блок оплаты */
   .block_2-title {
     margin: 1.951vw 0 0 0;
     text-align: center;
@@ -476,6 +474,7 @@
     height: 120.599vw;
     border-radius: 3vh;
     margin-left: -21.282vw;
+    border: 0.065vw solid white;
   }
   .left-right-block {
     display: inline;
@@ -490,7 +489,7 @@
   .block-left p {
     padding: 1.927vw 0 0 1.927vw;
   }
-
+  /* Блок градиент */
   .block-right {
     margin-top: 4vw;
     margin-left: 4vw;
@@ -525,6 +524,20 @@
     margin-left: 21.8125vw;
   }
 
+  /* Цена курсов */
+  .price-block-item {
+    font-size: 4.5vw;
+    line-height: 6.578vw;
+  }
+
+  .price_1 p {
+    margin-left: 27.833vw;
+    padding-top: 2.5vw;
+  }
+
+  .price_1 span {
+    font-size: 7.604vw;
+  }
   .price_2 {
     position: absolute;
     margin-top: 148.474vw;
@@ -543,11 +556,12 @@
     margin-left: 25vw;
   }
   .order-first button {
-    margin-top: 0.302vw;
+    margin-top: 1.302vw;
     width: 44.531vw;
     height: 8vw;
     border-radius: 2vh;
     font-size: 4vw;
+    transition: 0s;
   }
 
   .order-second button {
@@ -568,11 +582,11 @@
 
   /* finish list */
   .finish-block-title {
-    margin: 12.557vw 0 0 10%;
+    margin: 13.557vw 0 0 10%;
     font-size: 8vw;
   }
   .finish-list {
-    margin-top: 6vw;
+    margin-top: 5vw;
     margin-left: 11.182vw;
     font-size: 4.5vw;
     padding: 0;
@@ -588,7 +602,45 @@
     padding-left: 12.557vw;
     padding-top: 2.651vw;
   }
+  /* Блок про автора курса */
+  .about-author {
+    font-size: 4.5vw;
+    margin-left: 9.182vw;
+    margin-top: 10vw;
+  }
+  .author-visible-info {
+    display: inline;
+  }
+  .author-visible-info img {
+    width: 60%;
+    margin-left: 15%;
+    margin-bottom: 10vw;
+  }
+  .visible-text {
+    width: 90%;
+    margin-left: 2vw;
+    margin-bottom: 5vw;
+  }
+  .read-more {
+    margin: 5vw 0 5vw 2vw;
+    width: 28%;
+  }
+  .open-text {
+    display: none;
+    margin-top: 3vw;
+    width: 90%;
+    margin-left: 2vw;
+  }
 
+  .open-text p {
+    margin-bottom: 5vw;
+  }
+
+  .hide-text {
+    width: 21%;
+  }
+
+  /* Оценка в процентах */
   .reviews ul {
     width: 90.526vw;
     margin: 8.955vw 0 0 30.997vw;
@@ -609,14 +661,13 @@
   /* Slider 2 */
   .reviews-swiper > .swiper {
     width: 90%;
-    margin-top: 1.125vw;
-    padding-left: 4.053vw;
+    margin: 1.125vw 0 0 5%;
+    padding-left: 0.053vw;
   }
 
   /* Slider 3 */
-
   .slider_3 > .swiper {
-    margin: 1.125vw 0 5.078vw 5.182vw;
+    margin: 1.125vw 0 12.078vw 5.182vw;
     width: 90%;
     padding-right: 5vw;
   }
@@ -637,15 +688,14 @@
   }
   .footer-btn {
     width: 44.531vw;
-    height: 8vw;
-    border-radius: 2vh;
+    height: 9.9vw;
+    border-radius: 10vh;
     font-size: 4vw;
     margin-left: 27.8%;
     margin-top: 10%;
   }
 
   /*Всплавыющее окно оплаты*/
-
   .window:target .window_content {
     transform: perspective(100%) translate(0px, 0%) rotateX(0deg);
     opacity: 1;
@@ -674,7 +724,7 @@
 
   .window-social {
     margin: 2vw 0 1vw 6vw;
-    width: 80%;
+    width: 85%;
     height: 7vw;
     background-color: #f3f5f7;
     border-radius: 1vw;
@@ -682,12 +732,12 @@
   }
 
   .window-social p {
+    width: 100%;
     font-size: 3vw;
     margin: 2vw 3vw;
   }
 
   /* Увеличение фото */
-
   #zoom .popup span {
     top: 17vw;
     right: 10vw;

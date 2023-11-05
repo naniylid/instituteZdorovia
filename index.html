@@ -269,6 +269,10 @@
             </p>
           </div>
         </div>
+        <div class="arrow-items">
+          <p>разверни</p>
+          <img src="./img/Arrow.svg" alt="" />
+        </div>
       </section>
       <section class="section block-space">
         <div class="space">
@@ -593,7 +597,7 @@
                   ошеломляющим не от того, что я говорю и что делаю, а от того,
                   как я лично ощущаю этот процесс и что происходит со мной.
                 </p>
-                <a href="" class="read-more"><p>читать далее</p></a>
+                <p class="read-more">читать далее</p>
               </div>
             </div>
             <div class="open-text">
@@ -638,7 +642,7 @@
                 открывают нам эти возможности, вероятно, это и называется
                 Миссией.
               </p>
-              <a href="" class="hide-text">свернуть</a>
+              <p class="hide-text">свернуть</p>
             </div>
           </div>
           <div class="reviews">
@@ -812,6 +816,14 @@
       });
       document.querySelector('.popup span').onclick = () => {
         document.querySelector('.popup').style.display = 'none';
+      };
+
+      //Скрыть/показать текст в нижнем блоке
+      document.querySelector('.read-more').onclick = () => {
+        document.querySelector('.open-text').style.display = 'block';
+      };
+      document.querySelector('.hide-text').onclick = () => {
+        document.querySelector('.open-text').style.display = 'none';
       };
     </script>
     <script src="./script.js"></script>

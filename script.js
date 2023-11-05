@@ -27,7 +27,7 @@ function windowPlus() {
         btn.style.fontSize = '4vw';
       } else {
         btn.textContent = '✖'; // Возвращаем текст кнопки на "✖" при сворачивании
-        btn.style.fontSize = '3vw';
+        btn.style.fontSize = '2vw';
       }
 
       btn.setAttribute('aria-expanded', !expanded);

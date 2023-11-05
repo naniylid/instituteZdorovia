@@ -6,6 +6,11 @@
   --dark-color: #125369;
   --light-color: #a5c6cd;
 }
+@font-face {
+  font-family: 'Young Love ES';
+  src: url('./fonts/younglovees.ttf');
+}
+
 body {
   font-family: 'Forum';
   background-color: white;
@@ -53,8 +58,8 @@ header {
 
 .headerbtn {
   margin: 2% 0 10% 41%;
-  height: 4.1vw;
   width: 20%;
+  height: 4.1vw;
   border-radius: 2.2vw;
   font-size: 1.8vw;
   padding-top: 0.2vw;
@@ -106,7 +111,7 @@ header {
 
 .text-second-block {
   width: 60%;
-  padding-top: 3vw;
+  padding-top: 3.5vw;
   padding-bottom: 5.078vw;
   margin-left: 16.182vw;
   font-size: 1.997vw;
@@ -117,7 +122,7 @@ header {
 }
 .course-info-title {
   padding-top: 5.078vw;
-  padding-bottom: 3.125vw;
+  padding-bottom: 3.5vw;
   font-size: 3.929vw;
   color: var(--dark-color);
 }
@@ -128,7 +133,7 @@ header {
   flex-wrap: wrap;
   column-gap: 1.627vw;
   row-gap: 1.627vw;
-  padding-bottom: 11.078vw;
+  padding-bottom: 5.078vw;
 }
 .course-info-list-item {
   padding-top: 1.5vw;
@@ -165,7 +170,7 @@ header {
 }
 
 .list {
-  padding-top: 1.823vw;
+  padding-top: 2.5vw;
   padding-left: 21.786vw;
 }
 
@@ -182,9 +187,9 @@ header {
   padding: 0.951vw 0 0 2.3vw;
 }
 
+.audience-list li:nth-child(2),
 .audience-list li:nth-child(3),
-.audience-list li:nth-child(4),
-.audience-list li:nth-child(2) {
+.audience-list li:nth-child(4) {
   height: 4.5vw;
   padding-top: 1vw;
 }
@@ -219,11 +224,11 @@ header {
   width: 95%;
 }
 .audience-btn {
-  margin: 3vw 0 4vw 34vw;
+  margin: 3vw 0 5.078vw 34vw;
   background-color: white;
-  border-radius: 3vw;
   width: 27%;
-  height: 5vw;
+  height: 4.1vw;
+  border-radius: 2.2vw;
   font-size: 2vw;
 }
 .audience-btn a {
@@ -288,6 +293,21 @@ h3 button {
   height: 29.953vw;
 }
 
+/* Стрелка разверни */
+.arrow-items {
+  margin-left: 70%;
+  margin-top: 2%;
+  display: flex;
+}
+
+.arrow-items p {
+  margin-top: 3%;
+  font-size: 1.5vw;
+  color: var(--main-color);
+}
+.arrow-items img {
+  width: 8%;
+}
 /* Суфийское пространство */
 .space {
   background-size: 100%;
@@ -308,7 +328,7 @@ h3 button {
   margin-top: 16.276vw;
 }
 .space-block-title {
-  padding: 5.078vw 0 0 3.906vw;
+  padding: 5.078vw 0 2vw 3.906vw;
   font-size: 3.604vw;
   color: var(--dark-color);
 }
@@ -321,16 +341,16 @@ h3 button {
   color: var(--dark-color);
 }
 .space-block-text p {
-  padding-top: 2.3vw;
+  padding-bottom: 2.3vw;
   width: 90%;
 }
 
 .space-btn {
+  margin: 2.125vw 0 5.078vw 3.906vw;
   width: 35%;
-  height: 4vw;
-  border-radius: 3vw;
-  margin-left: 3.906vw;
-  margin-top: 4.125vw;
+  height: 4.1vw;
+  border-radius: 2.2vw;
+
   font-size: 2vw;
 }
 
@@ -340,12 +360,11 @@ h3 button {
 
 /* Что вы сможете после курса */
 .course-possibilities {
-  margin-top: 5.859vw;
-  height: 92.359vw;
+  margin-top: 5.078vw;
   background: var(--main-color);
 }
 .course-possibilities-title {
-  padding: 5.208vw 0 3.953vw 16.182vw;
+  padding: 5.078vw 0 3vw 16.182vw;
   font-size: 3.604vw;
   color: white;
 }
@@ -368,8 +387,12 @@ h3 button {
 .possibilities-list:nth-child(2) {
   height: 6vw;
 }
-.possibilities-list:nth-child(4) {
+.possibilities-list:nth-child(4),
+.possibilities-list:nth-child(6) {
   margin-top: -2.3vw;
+}
+.possibilities-list:nth-child(8) {
+  margin-top: -4.2vw;
 }
 .possibilities-list p {
   width: 89%;
@@ -381,16 +404,16 @@ h3 button {
 .course-sphere img {
   width: 35%;
   position: absolute;
-  margin-left: 43%;
-  margin-top: -15.5%;
+  margin-left: 49%;
+  margin-top: -21.5%;
 }
 
 .posibil-btn {
-  margin: 12vw 0 4vw 34vw;
+  margin: 10vw 0 5.078vw 34vw;
   background-color: white;
-  border-radius: 3vw;
   width: 27%;
-  height: 5vw;
+  height: 4.1vw;
+  border-radius: 2.2vw;
   font-size: 2vw;
 }
 .posibil-btn a {
@@ -399,8 +422,9 @@ h3 button {
 
 /* Лицензии */
 .documents-block-title {
-  margin: 4.557vw 0 1.953vw 16.182vw;
+  margin: 5.078vw 0 1vw 16.182vw;
   font-size: 3.929vw;
+  line-height: 3.4vw;
   color: var(--dark-color);
 }
 .document-text {
@@ -422,14 +446,11 @@ h3 button {
 }
 .document-image {
   margin-top: 3.125vw;
-  margin-bottom: 5.078vw;
+  margin-bottom: 2.078vw;
   cursor: pointer;
 }
 .first-doc {
   width: 30%;
-}
-.document-image:last-child {
-  width: 150%;
 }
 
 .second-doc img {
@@ -537,6 +558,7 @@ h3 button {
   border-top: 0.065vw solid var(--main-color);
 }
 
+/* Блок с подарком */
 .present-block {
   margin-top: 0.781vw;
   margin-left: 0.976vw;
@@ -561,41 +583,8 @@ h3 button {
   margin-left: 4.557vw;
   margin-top: -3.19vw;
 }
-.price-block-item {
-  color: white;
-  font-size: 1.497vw;
-  line-height: 2.278vw;
-}
 
-.price_1 p {
-  margin-left: 18.833vw;
-  padding-top: 1.5vw;
-}
-
-.price_1 span {
-  font-size: 2.604vw;
-}
-
-.price_2 {
-  position: absolute;
-  margin-top: -15.5vw;
-  margin-left: 45vw;
-}
-.price_2-item {
-  padding-top: 1.5vw;
-}
-.price_2 span {
-  font-size: 2.604vw;
-}
-
-.decoration {
-  z-index: 3;
-  color: #a5c6cd;
-  font-size: 1.627vw;
-  margin-bottom: -1.953vw;
-  text-decoration: line-through;
-}
-
+/* Второй квадрат с двумя частями */
 .price-block_2 {
   position: absolute;
   margin: -33.203vw 0 0 41.666vw;
@@ -634,6 +623,7 @@ h3 button {
   padding: 1.627vw 0 0 1.627vw;
 }
 
+/* Блок с градиентом */
 .block-right {
   margin-top: -0.5vw;
   margin-left: 0.651vw;
@@ -666,16 +656,48 @@ h3 button {
   padding-top: 0.03vw;
 }
 
-@font-face {
-  font-family: 'Young Love ES';
-  src: url('./fonts/younglovees.ttf');
-}
 .right-text-item {
   font-family: 'Young Love ES';
   font-size: 3.255vw;
   color: white;
   margin-top: 3.906vw;
   margin-left: 7.8125vw;
+}
+
+/* Цена курса */
+.price-block-item {
+  color: white;
+  font-size: 1.497vw;
+  line-height: 2.278vw;
+}
+
+.price_1 p {
+  margin-left: 18.833vw;
+  padding-top: 1.5vw;
+}
+
+.price_1 span {
+  font-size: 2.604vw;
+}
+
+.price_2 {
+  position: absolute;
+  margin-top: -15.5vw;
+  margin-left: 45vw;
+}
+.price_2-item {
+  padding-top: 1.5vw;
+}
+.price_2 span {
+  font-size: 2.604vw;
+}
+
+.decoration {
+  z-index: 3;
+  color: #a5c6cd;
+  font-size: 1.627vw;
+  margin-bottom: -1.953vw;
+  text-decoration: line-through;
 }
 
 /* Кнопки оплаты */
@@ -704,8 +726,8 @@ h3 button {
   color: var(--dark-color);
   font-size: 1.497vw;
   width: 17.578vw;
-  height: 4.557vw;
-  border-radius: 2.929vw;
+  height: 4.1vw;
+  border-radius: 2.2vw;
   padding: 0;
 }
 
@@ -761,34 +783,37 @@ h3 button {
   display: flex;
 }
 .author-visible-info img {
-  width: 60%;
+  width: 65%;
 }
 .visible-text {
-  width: 65%;
+  width: 70%;
   margin-left: 2vw;
   margin-bottom: 2vw;
 }
-.read-more p {
-  width: 17%;
+.read-more {
+  width: 18%;
   margin-left: 2vw;
-  margin-top: 3vw;
+  margin-top: 1vw;
   color: var(--main-color);
   border-bottom: 0.12vw solid var(--main-color);
   padding-bottom: -0.1vw;
+  cursor: pointer;
 }
 .open-text {
+  display: none;
   margin-top: 3vw;
   width: 75%;
 }
 
 .open-text p {
-  padding-bottom: 3vw;
+  margin-bottom: 3vw;
 }
 
 .hide-text {
+  width: 12%;
   color: var(--main-color);
   border-bottom: 0.12vw solid var(--main-color);
-  padding-bottom: -0.1vw;
+  cursor: pointer;
 }
 
 /* Оценка в процентах */
@@ -811,10 +836,10 @@ h3 button {
 
 /* Slider 2 */
 .reviews-swiper > .swiper {
-  width: 50%;
+  width: 35%;
   margin-top: 1.125vw;
-  padding-left: 5.053vw;
-
+  margin-left: 32%;
+  padding-left: 0.053vw;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
@@ -823,7 +848,7 @@ h3 button {
 
 /* Slider 3 */
 .slider_3 {
-  margin: 3.125vw 0 5.078vw 0;
+  margin: 3.125vw 0 5.078vw -2vw;
   width: 100%;
 }
 
@@ -838,12 +863,13 @@ h3 button {
 }
 .footer-name {
   margin-top: 4.078vw;
-  margin-left: 41%;
+  margin-left: 40%;
   width: 20%;
 }
 .footer-btn {
   width: 15%;
-  height: 4vw;
+  height: 4.1vw;
+  border-radius: 2.2vw;
   margin-left: -17.5%;
   margin-top: 25%;
   font-size: 1.497vw;

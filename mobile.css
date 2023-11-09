@@ -9,7 +9,7 @@
   /* Первый лист */
   header {
     height: 900px;
-    background-image: url(./img/header-back.jpg);
+    background-image: url(./img/header-back\ —\ mobile.jpg);
     background-size: 230vw;
     background-color: white;
   }
@@ -21,7 +21,7 @@
   }
 
   .mobile-gradient {
-    margin-top: 40%;
+    margin-top: 30%;
     height: 30%;
     background: linear-gradient(
       180deg,
@@ -289,7 +289,7 @@
   /* Что вы сможете после курса */
   .course-possibilities {
     margin-top: 5.859vw;
-    height: 1400px;
+    height: 1450px;
   }
   .course-possibilities-title {
     padding: 10vw 0 7vw 10%;
@@ -339,7 +339,7 @@
 
   /* Лицензии */
   .documents-block {
-    height: 1500px;
+    height: 1590px;
   }
   .documents-block-title {
     margin: 13.557vw 0 1.953vw 10%;
@@ -365,14 +365,20 @@
   .document-image {
     margin-top: 5.125vw;
   }
+
+  .document-image img {
+    border-radius: 3vw;
+  }
+
   .first-doc {
     width: 70%;
     margin-left: 10%;
   }
+
   .second-doc {
     position: absolute;
     width: 33vh;
-    margin-left: -6vw;
+    margin-left: -2vw;
     margin-top: 90vw;
   }
 
@@ -471,11 +477,10 @@
   .second-block_1 {
     margin-top: 100.539vw;
     width: 55.531vw;
-    height: 120.599vw;
+    height: 123.599vw;
     border-radius: 3vh;
     margin-left: -21.282vw;
-    border: 0.065vw solid white;
-    border-left: 0.065vw solid white;
+    border: 1px solid white;
   }
   .left-right-block {
     display: inline;
@@ -541,7 +546,7 @@
   }
   .price_2 {
     position: absolute;
-    margin-top: 148.474vw;
+    margin-top: 151.474vw;
     margin-left: 28vw;
   }
   .price_2 span {
@@ -616,6 +621,7 @@
     width: 60%;
     margin-left: 15%;
     margin-bottom: 10vw;
+    border-radius: 2vw;
   }
   .visible-text {
     width: 90%;

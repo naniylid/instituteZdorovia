@@ -7,9 +7,9 @@
       name="description"
       content="Квантовая психоэнергетика. Бесконтактный массаж"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="mobile.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -50,6 +50,7 @@
           </div>
         </div>
         <img src="./img/logo-text.svg" alt="" class="logo-text" />
+
         <p class="header-text">
           Как всего за 5 дней научиться использовать свой биоэнергетический
           потенциал, понять квантовые законы, отпустить «вековые зажимы» и
@@ -303,7 +304,7 @@
             </div>
             <!-- Ссылка на блок с ценами -->
             <button class="space-btn btn">
-              <a href="#course-price">Оплатить участие</a>
+              <a href="#course-price">ДЕЛАЮ ШАГ</a>
             </button>
           </div>
         </div>
@@ -812,22 +813,30 @@
     </div>
     <script>
       //Увеличение фото при нажатии
-      document.querySelectorAll('#zoom img').forEach(img => {
+      document.querySelectorAll("#zoom img").forEach((img) => {
         img.onclick = () => {
-          document.querySelector('.popup').style.display = 'block';
-          document.querySelector('.popup img').src = img.getAttribute('src');
+          document.querySelector(".popup").style.display = "block";
+          document.querySelector(".popup img").src = img.getAttribute("src");
         };
       });
-      document.querySelector('.popup span').onclick = () => {
-        document.querySelector('.popup').style.display = 'none';
+      document.querySelector(".popup span").onclick = () => {
+        document.querySelector(".popup").style.display = "none";
       };
 
       //Скрыть/показать текст в нижнем блоке
-      document.querySelector('.read-more').onclick = () => {
-        document.querySelector('.open-text').style.display = 'block';
+      document.querySelector(".read-more").onclick = () => {
+        document.querySelector(".open-text").style.display = "block";
       };
-      document.querySelector('.hide-text').onclick = () => {
-        document.querySelector('.open-text').style.display = 'none';
+
+      document.querySelector(".hide-text").onclick = () => {
+        const readMoreElement = document.querySelector(".read-more");
+        readMoreElement.scrollIntoView({
+          behavior: "auto",
+          block: "start",
+        });
+
+        // Скрытие текста
+        document.querySelector(".open-text").style.display = "none";
       };
     </script>
     <script src="./script.js"></script>

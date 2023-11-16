@@ -1,16 +1,33 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-// const CopyWebpackPlugin = require("copy-webpack-plugin");
-// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const OptimizeCssAssetWebpackPlugin = require("optimize-css-assets-webpack-plugin");
-// const TerserWebpackPlugin = require("terser-webpack-plugin");
-// const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+
+const isDev = process.env.NODE_ENV === "development";
+const isProd = !isDev;
+
+const plugins = () => {
+  const base = [
+    new HTMLWebpackPlugin({
+      template: "./index.html",
+    }),
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
+    }),
+  ];
+  if (isProd) {
+    base.push(new BundleAnalyzerPlugin());
+  }
+
+  return base;
+};
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
   mode: "development",
-  entry: "./script.js",
+  entry: ["@babel/polyfill", "./script.js"],
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
@@ -19,40 +36,44 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "dist"),
     },
+
     compress: true,
     port: 3000,
   },
-  plugins: [
-    new HTMLWebpackPlugin({
-      template: "./index.html",
-    }),
-    new CleanWebpackPlugin(),
-    // new MiniCssExtractPlugin(),
-  ],
+  plugins: plugins(),
   module: {
     rules: [
       {
+        test: /\.html$/,
+        use: "html-loader",
+      },
+      {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
 
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-          outputPath: "img/",
+        type: "asset/resource",
+        generator: {
+          filename: "img/[name][ext]",
         },
       },
       {
         test: /\.(ttf|woff|woff2|eot)$/,
         use: ["file-loader"],
       },
-      //   {
-      //     test: /\.css$/i,
-      //     use: [MiniCssExtractPlugin.loader, "css-loader"],
-      //   },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+            plugins: ["@babel/plugin-proposal-class-properties"],
+          },
+        },
+      },
     ],
   },
   resolve: {

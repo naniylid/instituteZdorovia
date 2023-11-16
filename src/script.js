@@ -1,9 +1,10 @@
-("use strict");
 import "./css/style.css";
 import "./css/mobile.css";
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
+import "./babel.js";
 
+("use strict");
 //Встроенный слайдер Swiper
 var swiper = new Swiper(".mySwiper", {
   modules: [Navigation, Pagination],
@@ -16,7 +17,7 @@ var swiper = new Swiper(".mySwiper", {
     maxRatio: 5,
   },
 });
-swiper();
+
 //Блок Программа курса, всплывающий текст через +
 function windowPlus() {
   const headings = document.querySelectorAll("h3");
@@ -41,7 +42,6 @@ function windowPlus() {
     };
   });
 }
-
 windowPlus();
 
 //Увеличение фото при нажатии

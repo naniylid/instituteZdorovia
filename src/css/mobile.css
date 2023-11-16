@@ -9,7 +9,7 @@
   /* Первый лист */
   header {
     height: 900px;
-    background-image: url('../img/header-back — mobile.jpg');
+    background-image: url("../img/header-back — mobile.jpg");
     background-size: 210vw;
     background-color: white;
   }
@@ -385,11 +385,11 @@
 
   /* Slider */
   .swiper-slide {
-    padding-left: 5.302vw;
+    padding-left: 20%;
   }
 
   .swiper {
-    margin: 10vw 0 5vw 0;
+    margin: 10vw 0 1vw 15%;
     width: 65%;
     height: 20%;
   }
@@ -397,6 +397,7 @@
   .swiper-slide img {
     width: 70%;
     border-radius: 5vw;
+    align-items: center;
   }
 
   /* price block */

@@ -32,6 +32,7 @@
     "find-up": "^4.1.0",
     "flat": "^5.0.2",
     "function-bind": "^1.1.2",
+    "gh-pages": "^6.0.0",
     "glob-to-regexp": "^0.4.1",
     "graceful-fs": "^4.2.11",
     "has-flag": "^4.0.0",
@@ -124,5 +125,7 @@
   "bugs": {
     "url": "https://github.com/naniylid/instituteZdorovia/issues"
   },
-  "homepage": "https://github.com/naniylid/instituteZdorovia#readme"
+  "homepage": "https://github.com/naniylid/instituteZdorovia#readme",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
 }

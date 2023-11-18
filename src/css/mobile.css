@@ -9,7 +9,7 @@
   /* Первый лист */
   header {
     height: 900px;
-    background-image: url("../img/header-back — mobile.jpg");
+    background-image: url("../img/headerback-mobile.png");
     background-size: 210vw;
     background-color: white;
   }
@@ -389,7 +389,7 @@
   }
 
   .swiper {
-    margin: 10vw 0 1vw 15%;
+    margin: 10vw 0 0 20%;
     width: 65%;
     height: 20%;
   }
@@ -672,16 +672,16 @@
 
   /* Slider 2 */
   .reviews-swiper > .swiper {
-    width: 93%;
+    width: 90%;
     margin: 1.125vw 0 0 5%;
-    padding-left: 3.053vw;
+    padding-right: 7vh;
   }
 
   /* Slider 3 */
   .slider_3 > .swiper {
     margin: 1.125vw 0 12.078vw 5%;
     width: 93%;
-    padding-right: 7.053vw;
+    padding-right: 7vh;
   }
 
   .swiper-slide > iframe {
@@ -691,7 +691,7 @@
 
   /* Footer */
   .footer {
-    height: 88.552vw;
+    height: 70vh;
   }
   .footer-name {
     margin-top: 7.078vw;
@@ -750,6 +750,11 @@
   }
 
   /* Увеличение фото */
+  #zoom .popup img {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+  }
   #zoom .popup span {
     top: 17vw;
     right: 10vw;

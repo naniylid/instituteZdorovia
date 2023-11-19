@@ -43,30 +43,3 @@ function windowPlus() {
   });
 }
 windowPlus();
-
-//Увеличение фото при нажатии
-document.querySelectorAll("#zoom img").forEach((img) => {
-  img.onclick = () => {
-    document.querySelector(".popup").style.display = "block";
-    document.querySelector(".popup img").src = img.getAttribute("src");
-  };
-});
-document.querySelector(".popup span").onclick = () => {
-  document.querySelector(".popup").style.display = "none";
-};
-
-//Скрыть/показать текст в нижнем блоке
-document.querySelector(".read-more").onclick = () => {
-  document.querySelector(".open-text").style.display = "block";
-};
-
-document.querySelector(".hide-text").onclick = () => {
-  const readMoreElement = document.querySelector(".read-more");
-  readMoreElement.scrollIntoView({
-    behavior: "auto",
-    block: "start",
-  });
-
-  // Скрытие текста
-  document.querySelector(".open-text").style.display = "none";
-};

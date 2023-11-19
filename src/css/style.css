@@ -54,7 +54,7 @@ header {
 }
 
 .headerbtn {
-  margin: 2% 0 10% 41%;
+  margin: 2% 0 10% 40.5%;
   width: 20%;
   height: 4.1vw;
   border-radius: 2.2vw;
@@ -311,8 +311,8 @@ h3 button {
   background-image: url("../img/waves.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 85.9vw;
-  margin-top: 4.812vw;
+  height: 87.9vw;
+  margin-top: 3.812vw;
 }
 .space-block {
   position: absolute;
@@ -343,8 +343,8 @@ h3 button {
 }
 
 .space-btn {
-  margin: 2.125vw 0 5.078vw 3.906vw;
-  width: 35%;
+  margin: 2.125vw 0 5.078vw 3.3vw;
+  width: 48%;
   height: 4.1vw;
   border-radius: 2.2vw;
 
@@ -399,16 +399,16 @@ h3 button {
 }
 
 .course-sphere img {
-  width: 35%;
+  width: 37%;
   position: absolute;
   margin-left: 49%;
-  margin-top: -21.5%;
+  margin-top: -18.5%;
 }
 
 .posibil-btn {
-  margin: 6vw 0 5.078vw 34vw;
+  margin: 6vw 0 5.078vw 37vw;
   background-color: white;
-  width: 27%;
+  width: 23%;
   height: 4.1vw;
   border-radius: 2.2vw;
   font-size: 2vw;
@@ -445,16 +445,15 @@ h3 button {
   margin-top: 3.125vw;
   margin-bottom: 2.078vw;
   cursor: pointer;
-  border-radius: 2vw;
 }
 .first-doc {
-  width: 100%;
+  width: 50%;
 }
 
 .second-doc img {
-  margin-top: -14%;
+  margin-top: 34%;
   margin-left: 7%;
-  width: 90%;
+  width: 85%;
 }
 
 /* Slider */
@@ -471,7 +470,6 @@ h3 button {
   width: 25vw;
   height: 40%;
   position: relative;
-  border-radius: 2vw;
 }
 
 .swiper {
@@ -869,10 +867,10 @@ h3 button {
   width: 20%;
 }
 .footer-btn {
-  width: 15%;
+  width: 20%;
   height: 4.1vw;
   border-radius: 2.2vw;
-  margin-left: -17.5%;
+  margin-left: -20%;
   margin-top: 25%;
   font-size: 1.497vw;
   transition: 0.2s;
@@ -986,9 +984,9 @@ h3 button {
 
 #zoom .popup img {
   position: absolute;
-  top: 50% !important;
+  top: 50%;
   left: 50%;
-  width: 30% !important;
+  width: 30%;
   transform: translate(-50%, -50%);
 }
 

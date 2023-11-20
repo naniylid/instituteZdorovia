@@ -440,20 +440,16 @@ h3 button {
 .img-container {
   display: flex;
   width: 100%;
-}
-.document-image img {
   margin-top: 3.125vw;
   margin-bottom: 2.078vw;
+}
+.document-image {
+  margin-right: 3vw;
   cursor: pointer;
+  width: max-content;
 }
-.first-doc {
-  width: 50%;
-}
-
-.second-doc img {
-  margin-top: 34%;
-  margin-left: 7%;
-  width: 85%;
+.document-image:nth-child(2) img {
+  margin-top: 9vw;
 }
 
 /* Slider */
@@ -988,6 +984,7 @@ h3 button {
   left: 50%;
   width: 30%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 #zoom .popup span {

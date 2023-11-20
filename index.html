@@ -434,8 +434,12 @@
                 <img src="./img/docs/сертификат кванты 31.10.png" alt="" />
               </div>
               <!-- Увеличение фото при нажатии  -->
-              <div class="document-image second-doc">
-                <img src="./img/св-во кванты с тенью 1.svg" alt="" />
+              <div class="document-image">
+                <img
+                  class="second-doc"
+                  src="./img/св-во кванты с тенью 1.svg"
+                  alt=""
+                />
               </div>
               <div class="popup">
                 <span>&times;</span>
@@ -814,6 +818,21 @@
         img.onclick = () => {
           document.querySelector(".popup").style.display = "block";
           document.querySelector(".popup img").src = img.getAttribute("src");
+          // Проверяем, есть ли класс 'second-doc'
+          if (img.classList.contains("second-doc")) {
+            document.querySelector(".popup img").style.width = "70%";
+            if (window.innerWidth < 500) {
+              document.querySelector(".popup img").style.width = "100%";
+            }
+          } else {
+            // Если нет, и ширина экрана меньше 600px, увеличиваем размер на 100%
+            if (window.innerWidth < 500) {
+              document.querySelector(".popup img").style.width = "100%";
+            } else {
+              // Иначе, увеличиваем размер на 30%
+              document.querySelector(".popup img").style.width = "30%";
+            }
+          }
         };
       });
       document.querySelector(".popup span").onclick = () => {

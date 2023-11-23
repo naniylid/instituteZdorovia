@@ -17,9 +17,9 @@ const plugins = () => {
       filename: "[name].[contenthash].css",
     }),
   ];
-  if (isProd) {
-    base.push(new BundleAnalyzerPlugin());
-  }
+  // if (isProd) {
+  //   base.push(new BundleAnalyzerPlugin());
+  // }
 
   return base;
 };
@@ -40,6 +40,7 @@ module.exports = {
     compress: true,
     port: 4000,
   },
+
   plugins: plugins(),
   module: {
     rules: [

@@ -6,6 +6,25 @@ import "@babel/polyfill";
 import "./babel.js";
 
 ("use strict");
+//Lazy loading
+const hs = window.innerHeight;
+
+function LazyShowImages() {
+  const sp = window.scrollY + hs;
+  const elements = document.getElementsByClassName("lazy");
+
+  Array.from(elements).forEach((e) => {
+    const elementTop = e.offsetTop;
+    const elementBottom = elementTop + e.clientHeight;
+
+    if (sp > elementTop && sp < elementBottom) {
+      e.setAttribute("src", e.getAttribute("data-src"));
+      e.classList.remove("lazy");
+    }
+  });
+}
+
+window.addEventListener("scroll", LazyShowImages);
 
 //Встроенный слайдер Swiper
 var swiper = new Swiper(".mySwiper", {

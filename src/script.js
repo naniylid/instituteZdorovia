@@ -3,8 +3,10 @@ import "./css/mobile.css";
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 import "@babel/polyfill";
+import "./babel.js";
 
 ("use strict");
+
 //Встроенный слайдер Swiper
 var swiper = new Swiper(".mySwiper", {
   modules: [Navigation, Pagination],

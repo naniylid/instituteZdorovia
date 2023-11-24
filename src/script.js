@@ -6,43 +6,6 @@ import "@babel/polyfill";
 import "./babel.js";
 
 ("use strict");
-//Lazy loading
-const lazyImages = document.querySelectorAll("img[data-src]");
-const windowHeight = document.documentElement.clientHeight;
-
-let lazyImagesPositions = [];
-if (lazyImages.length > 0) {
-  lazyImages.forEach((img) => {
-    if (img.dataset.src) {
-      lazyImagesPositions.push(
-        img.getBoundingClientRect().top + pageYOffset + img.clientHeight
-      );
-    }
-  });
-
-  lazyScrollCheck(); // Вызываем после добавления позиций
-}
-
-window.addEventListener("scroll", lazyScroll);
-
-function lazyScroll() {
-  if (document.querySelectorAll("img[data-src]").length > 0) {
-    lazyScrollCheck();
-  }
-}
-
-function lazyScrollCheck() {
-  lazyImagesPositions.forEach((item, index) => {
-    if (pageYOffset + windowHeight > item) {
-      if (lazyImages[index].dataset.src) {
-        lazyImages[index].src = lazyImages[index].dataset.src;
-        lazyImages[index].removeAttribute("data-src");
-      }
-      // Используем splice для удаления элемента из массива
-      lazyImagesPositions.splice(index, 1);
-    }
-  });
-}
 
 //Встроенный слайдер Swiper
 var swiper = new Swiper(".mySwiper", {

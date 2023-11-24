@@ -7,7 +7,9 @@
   --dark-color: #125369;
   --light-color: #a5c6cd;
 }
-
+img.lazyload:not([src]) {
+  visibility: hidden;
+}
 body {
   font-family: "Forum";
   background-color: white;

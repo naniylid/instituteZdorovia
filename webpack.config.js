@@ -3,9 +3,6 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const isDev = process.env.NODE_ENV === "development";
-const isProd = !isDev;
-
 const plugins = () => {
   const base = [
     new HTMLWebpackPlugin({
@@ -80,7 +77,7 @@ module.exports = {
       },
     ],
   },
-  resolve: {
-    extensions: [".js", ".css", ".png", ".jpg", ".jpeg", ".gif", ".svg"],
-  },
+  // resolve: {
+  //   extensions: [".js", ".css", ".png", ".jpg", ".jpeg", ".gif", ".svg"],
+  // },
 };

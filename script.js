@@ -1,10 +1,3 @@
-import "./css/style.css";
-import "./css/mobile.css";
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
-import "@babel/polyfill";
-import "./babel.js";
-
 ("use strict");
 
 //Встроенный слайдер Swiper

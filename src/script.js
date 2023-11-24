@@ -7,24 +7,42 @@ import "./babel.js";
 
 ("use strict");
 //Lazy loading
-const hs = window.innerHeight;
+const lazyImages = document.querySelectorAll("img[data-src]");
+const windowHeight = document.documentElement.clientHeight;
 
-function LazyShowImages() {
-  const sp = window.scrollY + hs;
-  const elements = document.getElementsByClassName("lazy");
+let lazyImagesPositions = [];
+if (lazyImages.length > 0) {
+  lazyImages.forEach((img) => {
+    if (img.dataset.src) {
+      lazyImagesPositions.push(
+        img.getBoundingClientRect().top + pageYOffset + img.clientHeight
+      );
+    }
+  });
 
-  Array.from(elements).forEach((e) => {
-    const elementTop = e.offsetTop;
-    const elementBottom = elementTop + e.clientHeight;
+  lazyScrollCheck(); // Вызываем после добавления позиций
+}
 
-    if (sp > elementTop && sp < elementBottom) {
-      e.setAttribute("src", e.getAttribute("data-src"));
-      e.classList.remove("lazy");
+window.addEventListener("scroll", lazyScroll);
+
+function lazyScroll() {
+  if (document.querySelectorAll("img[data-src]").length > 0) {
+    lazyScrollCheck();
+  }
+}
+
+function lazyScrollCheck() {
+  lazyImagesPositions.forEach((item, index) => {
+    if (pageYOffset + windowHeight > item) {
+      if (lazyImages[index].dataset.src) {
+        lazyImages[index].src = lazyImages[index].dataset.src;
+        lazyImages[index].removeAttribute("data-src");
+      }
+      // Используем splice для удаления элемента из массива
+      lazyImagesPositions.splice(index, 1);
     }
   });
 }
-
-window.addEventListener("scroll", LazyShowImages);
 
 //Встроенный слайдер Swiper
 var swiper = new Swiper(".mySwiper", {

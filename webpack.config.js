@@ -2,7 +2,6 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 const isDev = process.env.NODE_ENV === "development";
 const isProd = !isDev;
@@ -17,9 +16,6 @@ const plugins = () => {
       filename: "[name].[contenthash].css",
     }),
   ];
-  // if (isProd) {
-  //   base.push(new BundleAnalyzerPlugin());
-  // }
 
   return base;
 };
@@ -55,10 +51,17 @@ module.exports = {
 
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-        type: "asset/resource",
-        generator: {
-          filename: "img/[name][ext]",
+        use: {
+          loader: "file-loader",
+          options: {
+            outputPath: "img",
+            name: "[name].[ext]",
+          },
         },
+        // type: "asset/resource",
+        // generator: {
+        //   filename: "img/[name][ext]",
+        // },
       },
       {
         test: /\.(ttf|woff|woff2|eot)$/,

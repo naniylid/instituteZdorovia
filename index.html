@@ -10,23 +10,6 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-      rel="stylesheet"
-    />
-    <script
-      type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"
-    ></script>
-    <script>
-      !window.jQuery &&
-        document.write('<script src="jquery-1.4.3.min.js"><\/script>');
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <title>Квантовая психоэнергетика</title>
   </head>
@@ -455,43 +438,34 @@
               свидетельством, подтверждающим авторство программы.
             </p>
           </div>
-          <!-- Встроенный слайдер Swiper и увеличение фото при нажатии-->
-          <div class="swiper mySwiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide" id="zoom">
-                <div class="image-container">
-                  <img
-                    loading="lazy"
-                    src="img/docs/лицензия 31.10.png"
-                    alt="Лицензия"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide" id="zoom">
-                <div class="image-container">
-                  <img
-                    loading="lazy"
-                    src="img/docs/авторство кванты 31.10.png"
-                    alt="Лицензия"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide" id="zoom">
-                <div class="image-container">
-                  <img
-                    loading="lazy"
-                    src="img/docs/сертификат пфр 31.10.png"
-                    alt="Лицензия"
-                  />
-                </div>
-              </div>
+          <!-- Слайдер -->
+          <div class="slider-container">
+            <div class="slider" id="zoom">
+              <img
+                src="./img/docs/лицензия 31.10.png"
+                alt="Лицензия"
+                loading="lazy"
+              />
+              <img
+                src="./img/docs/авторство кванты 31.10.png"
+                alt="Лицензия"
+                loading="lazy"
+              />
+              <img
+                src="img/docs/сертификат пфр 31.10.png"
+                alt="Лицензия"
+                loading="lazy"
+              />
             </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <button
+              class="prev-button"
+              aria-label="Посмотреть предыдущий слайд"
+            >
+              &lt;
+            </button>
+            <button class="next-button" aria-label="Посмотреть следующий слайд">
+              &gt
+            </button>
           </div>
 
           <div class="document-text">
@@ -533,8 +507,8 @@
         </div>
       </section>
       <section class="section" id="course-price">
+        <h2 class="price-block-title">Стоимость</h2>
         <div class="price-block">
-          <h2 class="price-block-title">Стоимость</h2>
           <div class="price-block_1">
             <img
               loading="lazy"
@@ -597,55 +571,52 @@
               </div>
             </div>
           </div>
-
-          <div class="price-block-item">
-            <div class="price_1">
+        </div>
+        <div class="price-block-item">
+          <div class="price_1">
+            <p>
+              Рассрочка на 3-12 мес: <br />
+              <span>4 417</span> РУБ/мес
+            </p>
+            <p>
+              Полная стоимость: <br />
+              <span class="decoration">56 000</span> РУБ<br />
+              <span>53 000</span> РУБ
+            </p>
+          </div>
+          <div class="price_2">
+            <div class="price_2-item">
               <p>
                 Рассрочка на 3-12 мес: <br />
-                <span>4 417</span> РУБ/мес
+                <span>1 250</span> РУБ/мес
               </p>
+            </div>
+            <div class="price_2-item">
               <p>
-                Полная стоимость: <br />
-                <span class="decoration">56 000</span> РУБ<br />
-                <span>53 000</span> РУБ
+                Полная стоимость:<br />
+                <span>15 000</span> РУБ
               </p>
             </div>
-            <div class="price_2">
-              <div class="price_2-item">
-                <p>
-                  Рассрочка на 3-12 мес: <br />
-                  <span>1 250</span> РУБ/мес
-                </p>
-              </div>
-              <div class="price_2-item">
-                <p>
-                  Полная стоимость:<br />
-                  <span>15 000</span> РУБ
-                </p>
-              </div>
-            </div>
           </div>
-
-          <!-- Кнопки для связи/оплаты. Открывается модальное окно (#window), которое написано после footer -->
-          <div class="order">
-            <div class="order-first">
-              <a href="#window"
-                ><button class="pay btn">ЗАБРАТЬ МЕСТО</button></a
-              >
-              <!-- <button class="install btn">Купить в рассрочку</button> -->
-            </div>
-            <div class="order-second">
-              <a href="#window">
-                <button class="pay btn">ЗАБРАТЬ МЕСТО</button>
-              </a>
-              <!-- <button class="install btn">Купить в рассрочку</button> -->
-            </div>
-          </div>
-          <p class="price-text">
-            Количество мест ограничено. <br />
-            Работа проводится в рамках небольшой группы.
-          </p>
         </div>
+
+        <!-- Кнопки для связи/оплаты. Открывается модальное окно (#window), которое написано после footer -->
+        <div class="order">
+          <div class="order-first">
+            <a href="#window"><button class="pay btn">ЗАБРАТЬ МЕСТО</button></a>
+            <!-- <button class="install btn">Купить в рассрочку</button> -->
+          </div>
+          <div class="order-second">
+            <a href="#window">
+              <button class="pay btn">ЗАБРАТЬ МЕСТО</button>
+            </a>
+            <!-- <button class="install btn">Купить в рассрочку</button> -->
+          </div>
+        </div>
+        <p class="price-text">
+          Количество мест ограничено. <br />
+          Работа проводится в рамках небольшой группы.
+        </p>
       </section>
       <section class="section finish-main">
         <div class="finish-block">
@@ -758,103 +729,70 @@
               </li>
             </ul>
           </div>
-          <!-- Встроенный слайдер Swiper -->
-          <div class="reviews-swiper">
-            <div class="swiper mySwiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/27.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/22.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/20.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/32.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/31.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/17.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/18.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/19.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/23.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/24.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/25.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/26.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/28.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/29.png" alt="Отзыв" />
-                </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" src="img/reviews/30.png" alt="Отзыв" />
-                </div>
-              </div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+          <!-- Слайдер -->
+          <div class="slider-container slider_2">
+            <div class="slider" id="zoom">
+              <img loading="lazy" src="img/reviews/27.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/22.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/20.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/32.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/31.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/17.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/18.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/19.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/23.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/24.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/25.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/26.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/28.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/29.png" alt="Отзыв" />
+              <img loading="lazy" src="img/reviews/30.png" alt="Отзыв" />
             </div>
+            <button
+              class="prev-button"
+              aria-label="Посмотреть предыдущий слайд"
+            >
+              &lt;
+            </button>
+            <button class="next-button" aria-label="Посмотреть следующий слайд">
+              &gt
+            </button>
           </div>
-        </div>
-        <!-- Встроенный слайдер Swiper -->
-        <div class="slider_3">
-          <div class="swiper mySwiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <iframe
-                  src="https://www.youtube.com/embed/w_fp10Qq8TU"
-                  title="Даже шла по другому. Отзыв"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="swiper-slide">
-                <iframe
-                  src="https://www.youtube.com/embed/xmTvhnra0i4"
-                  title="Буду плакать навзрыд. Отзыв"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="swiper-slide">
-                <iframe
-                  src="https://www.youtube.com/embed/6lRKqYVsnt8"
-                  title="Прояснилось в голове. Отзыв"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+          <!-- Слайдер 3 -->
+          <div class="slider-container slider_3">
+            <div class="slider">
+              <iframe
+                src="https://www.youtube.com/embed/w_fp10Qq8TU"
+                title="Даже шла по другому. Отзыв"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/xmTvhnra0i4"
+                title="Буду плакать навзрыд. Отзыв"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/6lRKqYVsnt8"
+                title="Прояснилось в голове. Отзыв"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <button
+              class="prev-button"
+              aria-label="Посмотреть предыдущий слайд"
+            >
+              &lt;
+            </button>
+            <button class="next-button" aria-label="Посмотреть следующий слайд">
+              &gt
+            </button>
           </div>
         </div>
       </section>

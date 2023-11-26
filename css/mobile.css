@@ -266,7 +266,7 @@
     width: 76.848vw;
     height: 540.317px;
     margin-left: 10.531vw;
-    margin-top: 41.276vw;
+    margin-top: 35.276vw;
   }
   .space-block-title {
     padding: 5.078vw 0 0 4.906vw;
@@ -366,7 +366,7 @@
 
   /* Лицензии */
   .documents-block {
-    height: 190vh;
+    height: 230vh;
   }
   .documents-block-title {
     margin: 13.557vw 0 1.953vw 10%;
@@ -503,7 +503,7 @@
   .second-block_1 {
     margin-top: 80.539vw;
     margin-left: 20.182vw;
-    width: 55.531vw;
+    width: 57.531vw;
     height: 123.599vw;
     border-radius: 3vh;
 
@@ -593,7 +593,6 @@
     margin-left: 25vw;
   }
   .order-first button {
-    margin-top: 1.302vw;
     width: 44.531vw;
     height: 9.9vw;
     border-radius: 2vh;
@@ -746,14 +745,14 @@
     width: 5vw;
   }
   .window_title {
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin: 3vw 0;
   }
 
   .window-social {
     margin: 2vw 0 1vw 6vw;
-    width: 85%;
-    height: 7vw;
+    width: 90%;
+    height: 8vw;
     background-color: #f3f5f7;
     border-radius: 1vw;
     display: flex;
@@ -761,8 +760,8 @@
 
   .window-social p {
     width: 100%;
-    font-size: 3vw;
-    margin: 2vw 3vw;
+    font-size: 3.5vw;
+    margin: 2vw 2vw;
   }
 
   /* Увеличение фото */

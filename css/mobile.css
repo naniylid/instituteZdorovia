@@ -15,7 +15,7 @@
   /* Первый лист */
   header {
     height: 700px;
-    background-image: url("../img/headerback-mobile.png");
+    background-image: url('../img/headerback-mobile.png');
     background-size: 210vw;
     background-color: white;
   }
@@ -29,11 +29,7 @@
   .mobile-gradient {
     margin-top: 60%;
     height: 10%;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgb(255, 255, 255) 100%
-    );
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
   }
   .mobile-header {
     margin-top: -1vw;
@@ -264,7 +260,7 @@
   .space-block {
     border-radius: 4vh;
     width: 76.848vw;
-    height: 540.317px;
+    height: 62vh;
     margin-left: 10.531vw;
     margin-top: 35.276vw;
   }
@@ -289,14 +285,14 @@
     height: 9.9vw;
     border-radius: 10vh;
     margin-left: 4.906vw;
-    margin-top: 6.125vw;
+    margin-top: 4.125vw;
     font-size: 4.5vw;
   }
 
   /* Что вы сможете после курса */
   .course-possibilities {
     margin-top: 5.859vw;
-    height: 1150px;
+    height: 140vh;
   }
   .course-possibilities-title {
     padding: 10vw 0 7vw 10%;
@@ -420,7 +416,7 @@
 
   /* price block */
   #course-price {
-    height: 1650px;
+    height: 190vh;
   }
   .price-block-title {
     padding: 17.078vw 0 9vw 30%;
@@ -595,7 +591,7 @@
   .order-first button {
     width: 44.531vw;
     height: 9.9vw;
-    border-radius: 2vh;
+    border-radius: 10vh;
     font-size: 4.5vw;
     transition: 0s;
   }
@@ -605,7 +601,7 @@
     margin-left: 25vw;
     width: 44.531vw;
     height: 9.9vw;
-    border-radius: 2vh;
+    border-radius: 10vh;
     font-size: 4.5vw;
   }
 
@@ -756,6 +752,10 @@
     background-color: #f3f5f7;
     border-radius: 1vw;
     display: flex;
+  }
+
+  .window-social img {
+    margin-left: -0.08vw;
   }
 
   .window-social p {

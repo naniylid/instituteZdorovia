@@ -1,6 +1,6 @@
-@import "./reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
-@import "./YoungLoveES.css";
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import './YoungLoveES.css';
 
 *:root {
   --main-color: #477a8d;
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Forum";
+  font-family: 'Forum';
   background-color: white;
   overflow-x: hidden;
 }
@@ -17,7 +17,7 @@ body {
 /* Первый лист */
 header {
   height: max-content;
-  background-image: url("../img/headerback2.png");
+  background-image: url('../img/headerback2.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -308,7 +308,7 @@ h3 button {
 /* Суфийское пространство */
 .space {
   background-size: 100%;
-  background-image: url("../img/waves.svg");
+  background-image: url('../img/waves.svg');
   background-repeat: no-repeat;
   background-position: center;
   height: 87.9vw;
@@ -587,7 +587,7 @@ h3 button {
   margin: -2.5vw 0 0vw 6.255vw;
 }
 .second-block_1 h2 span {
-  font-family: "Young Love ES";
+  font-family: 'Young Love ES';
   font-size: 5vw;
 }
 .second-block_1 {
@@ -643,7 +643,7 @@ h3 button {
 }
 
 .right-text-item {
-  font-family: "Young Love ES";
+  font-family: 'Young Love ES';
   font-size: 3.255vw;
   color: white;
   margin-top: 3.906vw;
@@ -698,6 +698,7 @@ h3 button {
 }
 .order-first button {
   margin-top: 1.302vw;
+  border-radius: 2vw;
 }
 
 .order-second {
@@ -752,7 +753,7 @@ h3 button {
 }
 
 .finish-list-item {
-  background: url("../img/Star\ 12.svg") no-repeat center left;
+  background: url('../img/Star\ 12.svg') no-repeat center left;
   background-size: 5.8%;
   padding-left: 4.557vw;
   padding-top: 0.651vw;

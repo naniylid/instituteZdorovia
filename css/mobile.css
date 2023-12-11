@@ -260,7 +260,7 @@
   .space-block {
     border-radius: 4vh;
     width: 76.848vw;
-    height: 62vh;
+    height: 65vh;
     margin-left: 10.531vw;
     margin-top: 35.276vw;
   }
@@ -292,7 +292,7 @@
   /* Что вы сможете после курса */
   .course-possibilities {
     margin-top: 5.859vw;
-    height: 140vh;
+    height: 150vh;
   }
   .course-possibilities-title {
     padding: 10vw 0 7vw 10%;
@@ -416,7 +416,7 @@
 
   /* price block */
   #course-price {
-    height: 190vh;
+    height: 200vh;
   }
   .price-block-title {
     padding: 17.078vw 0 9vw 30%;
@@ -500,7 +500,7 @@
     margin-top: 80.539vw;
     margin-left: 20.182vw;
     width: 57.531vw;
-    height: 123.599vw;
+    height: 125vw;
     border-radius: 3vh;
 
     border: 1px solid white;
@@ -746,7 +746,7 @@
   }
 
   .window-social {
-    margin: 2vw 0 1vw 6vw;
+    margin: 2vw 0 1vw 4vw;
     width: 90%;
     height: 8vw;
     background-color: #f3f5f7;

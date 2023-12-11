@@ -260,7 +260,7 @@
   .space-block {
     border-radius: 4vh;
     width: 76.848vw;
-    height: 65vh;
+    height: max-content;
     margin-left: 10.531vw;
     margin-top: 35.276vw;
   }
@@ -284,15 +284,14 @@
     width: 75%;
     height: 9.9vw;
     border-radius: 10vh;
-    margin-left: 4.906vw;
-    margin-top: 4.125vw;
+    margin: 4.125vw 0 5vw 4.906vw;
     font-size: 4.5vw;
   }
 
   /* Что вы сможете после курса */
   .course-possibilities {
     margin-top: 5.859vw;
-    height: 150vh;
+    height: max-content;
   }
   .course-possibilities-title {
     padding: 10vw 0 7vw 10%;
@@ -339,13 +338,14 @@
   }
 
   .posibil-btn {
-    background: #285466;
-    color: white;
+    position: absolute;
+    margin-left: 11%;
+    margin-top: -75%;
     width: 60vw;
     height: 9.9vw;
     border-radius: 10vh;
-    margin-left: 11%;
-    margin-top: 4.125vw;
+    background: #285466;
+    color: white;
     font-size: 4.5vw;
   }
 
@@ -355,9 +355,8 @@
 
   .course-sphere img {
     width: 85%;
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 13.5%;
+    position: relative;
+    margin: 13.5% 0 10% 5%;
   }
 
   /* Лицензии */
@@ -416,7 +415,7 @@
 
   /* price block */
   #course-price {
-    height: 200vh;
+    height: max-content;
   }
   .price-block-title {
     padding: 17.078vw 0 9vw 30%;
@@ -500,7 +499,7 @@
     margin-top: 80.539vw;
     margin-left: 20.182vw;
     width: 57.531vw;
-    height: 125vw;
+    height: 127vw;
     border-radius: 3vh;
 
     border: 1px solid white;
@@ -608,7 +607,7 @@
   .price-text {
     width: 90%;
     margin: 10.557vw 0 0 11.182vw;
-    padding-bottom: 5.859vw;
+    padding-bottom: 15.859vw;
     font-size: 4vw;
   }
 
@@ -747,7 +746,7 @@
 
   .window-social {
     margin: 2vw 0 1vw 4vw;
-    width: 90%;
+    width: 93%;
     height: 8vw;
     background-color: #f3f5f7;
     border-radius: 1vw;

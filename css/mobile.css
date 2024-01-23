@@ -38,15 +38,14 @@
 
   .course-date {
     position: absolute;
-    margin-left: 30vw;
+    margin-left: 61vw;
     margin-top: -4%;
-    font-size: 4vw;
-    display: flex;
+    font-size: 4.3vw;
     width: 60%;
   }
 
   .logo-text {
-    padding-top: 8%;
+    padding-top: 6%;
     margin-left: 9.57%;
     width: 98%;
   }

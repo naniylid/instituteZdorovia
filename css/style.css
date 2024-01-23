@@ -30,12 +30,10 @@ header {
 }
 
 .course-date {
-  margin-left: 68%;
+  margin-left: 77%;
   margin-top: 7%;
-  font-size: 1.5vw;
+  font-size: 1.9vw;
   color: var(--main-color);
-  display: flex;
-  justify-content: space-between;
   width: 23%;
 }
 
